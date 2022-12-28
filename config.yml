@@ -1,0 +1,9 @@
+baseURL: ""
+languageCode: "en-us"
+title: "Zsolt Horváth"
+theme: "beautifulhugo"
+params:
+  subtitle: "Senior PHP Developer"
+  logo: "images/profile.jpg"
+  year: "2022"
+disableKinds: [taxonomy, term]
