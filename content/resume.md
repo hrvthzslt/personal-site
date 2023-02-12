@@ -1,0 +1,50 @@
+---
+title: "Resume"
+subtitle: "Senior Backend Developer"
+date: 2022-12-27T16:40:32+01:00
+draft: false
+---
+
+## About
+
+I have been interested in coding since my young age and began learning web development later on. 
+I have since transitioned into a professional career in backend development, 
+starting as a junior full-stack developer and gaining experience with a range of technologies and 
+programming languages. I am currently a backend developer with a focus on building robust and scalable applications.\
+I am constantly seeking to learn and improve my skills, and I am drawn to work environments where I can collaborate
+and learn from others. I am motivated by the opportunity to work towards well-defined goals and make meaningful
+contributions to the team.
+
+## Career
+
+- 2021 - Present - **Senior Backend Developer** at [**Webshippy**](https://webshippy.com/)
+  - Developing and maintaining new features of the company's main product and onsite software with a stack containing 
+  the following technologies: **PHP, MySql, Redis, Memcached**
+  - Developing new features in microservices architecture with the help of **Laravel, Kafka, Docker**
+
+- 2020 - 2021 – **Senior Backend Developer** at [**Mindtech Apps**](https://mindtechapps.com/)
+  - Developing backend Rest API with **PHP** and **Laravel**
+  - Developing backend API with **GraphQL** with **Javascript/TypeScript** and **NestJs**
+  - Assisting frontend team with API integrations
+
+- 2013 - 2020 – **Backend Developer at SR Limnatis Holdings Ltd**
+  - Developing tube sites, administration site, cms and webmaster site and supporting services in **PHP**
+  and **Javascript**
+  - Refactor and rebuild legacy project from plain PHP to **Codeigniter** and years later to **Laravel**, support new
+  version updates
+  - Scale sites for high traffic (40M+ views per day) with the help of databases such as **MySql**
+  and **MongoDb** and with **Redis** as a cache layer
+  - Implementing **Elasticsearch** for searching and filtering on our tube sites
+
+- 2013 February - September – **Mobile Application Developer and Manual Tester** at [**Appsters**](https://appsters.me/)
+  - Compose mobile applications with a set code base for multiple platforms (iOS, Android, Windows Phone)
+  - Manual testing for said mobile application by a predefined report
+
+## Education
+
+- 2010 - 2012 – **Szent György Média és Informatikai Szakgimnázium**\
+  Web Development Qualification by National Qualification Register
+
+___
+
+[**Download**](/documents/zsolt-horvath.pdf)

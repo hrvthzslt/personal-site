@@ -10,9 +10,9 @@
             {{- if isset $.Site.Author .id }}
               <li>
 		{{ if or ( hasPrefix ( index $.Site.Author .id ) "http://" ) ( hasPrefix ( index $.Site.Author .id ) "https://" ) }}
-		  <a {{ if .rel }}rel="{{ .rel }}"{{- end -}} href="{{ printf "%s" (index $.Site.Author .id) }}" title="{{ .title }}">
+		  <a target="_blank" {{ if .rel }}rel="{{ .rel }}"{{- end -}} href="{{ printf "%s" (index $.Site.Author .id) }}" title="{{ .title }}">
 		{{ else }}
-		  <a {{ if .rel }}rel="{{ .rel }}"{{- end -}} href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}">
+		  <a target="_blank" {{ if .rel }}rel="{{ .rel }}"{{- end -}} href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}">
 		{{ end }}
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>

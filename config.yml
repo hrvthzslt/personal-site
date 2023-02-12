@@ -3,7 +3,19 @@ languageCode: "en-us"
 title: "Zsolt Horváth"
 theme: "beautifulhugo"
 params:
-  subtitle: "Senior PHP Developer"
   logo: "images/profile.jpg"
   year: "2022"
+Author:
+  email: "hrvth.7slt@gmail.com"
+  linkedin: "zsolt-horváth-8779147a"
 disableKinds: [taxonomy, term]
+menu:
+  main:
+    - identifier: resume
+      name: "Resume"
+      url: /resume/
+      weight: 1
+    - identifier: posts
+      name: "Posts"
+      url: /posts/
+      weight: 2
