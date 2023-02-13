@@ -1,7 +1,7 @@
 ---
 title: "Antiquarian Book Party"
 date: 2023-02-13T09:56:06Z
-draft: true
+draft: false
 ---
 
 One day I felt the need for look up some old book that I used for learning my first programming language. I started my
