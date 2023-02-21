@@ -1,6 +1,6 @@
 ---
 title: "Resume"
-subtitle: "Senior Backend Developer"
+subtitle: "Backend Developer"
 date: 2022-12-27T16:40:32+01:00
 draft: false
 ---
@@ -17,12 +17,14 @@ contributions to the team.
 
 ## Career
 
-- 2021 - Present - **Senior Backend Developer** at [**Webshippy**](https://webshippy.com/)
+- 2023 - Present - **Backend Developer** at [**Billingo**](https://www.billingo.hu/)
+
+- 2021 - 2023 - **Backend Developer** at [**Webshippy**](https://webshippy.com/)
   - Developing and maintaining new features of the company's main product and onsite software with a stack containing 
   the following technologies: **PHP, MySql, Redis, Memcached**
   - Developing new features in microservices architecture with the help of **Laravel, Kafka, Docker**
 
-- 2020 - 2021 – **Senior Backend Developer** at [**Mindtech Apps**](https://mindtechapps.com/)
+- 2020 - 2021 – **Backend Developer** at [**Mindtech Apps**](https://mindtechapps.com/)
   - Developing backend Rest API with **PHP** and **Laravel**
   - Developing backend API with **GraphQL** with **Javascript/TypeScript** and **NestJs**
   - Assisting frontend team with API integrations
