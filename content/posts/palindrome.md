@@ -1,7 +1,7 @@
 ---
 title: "Palindrome"
 date: 2023-03-30T08:56:56Z
-draft: true
+draft: false
 ---
 
 Some time ago I was in the "going to job interviews" business. I applied to developer roles which usually means there will be at least some coding involved, and this fact can manifest itself during an interview.\
