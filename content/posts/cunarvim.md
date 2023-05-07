@@ -1,7 +1,7 @@
 ---
 title: "Cunarvim"
 date: 2023-05-01T17:03:49Z
-draft: true
+draft: false
 ---
 
 [Lunarvim](https://www.lunarvim.org/) is a collection of configuration which adds neovim IDE like functions. It's
