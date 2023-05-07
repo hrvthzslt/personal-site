@@ -11,7 +11,7 @@ Usually I prefer to use containerized development environments, but I still pref
 locally, I like to keep them close. If something breaks in my own system, I want to fix it, not just build
 a new container.\
 All that said creating a containerized Lunarvim setup is something I wanted to try, just to see how it would work. I
-wanted to see it as one independent delivered unit, which I can run anywhere.\
+wanted to see it as one independent delivered unit, which I can run anywhere.
 
 ## Cunarvim
 
@@ -52,9 +52,9 @@ the following:
 COPY config/config.lua /root/.config/lvim
 ```
 
-I copied the base configuration to the git repo and It will be copied when the image is built. This is how I can
+I copied the base configuration to the git repo, and It will be copied when the image is built. This is how I can
 customize my configuration, and I can keep it in the git repo. This means every config change needs a new build, but
-that is in fact another version of the image so I don't see a problem with that.
+that is in fact another version of the image, so I don't see a problem with that.
 
 ## Build and run
 
@@ -70,4 +70,5 @@ alias cvim='docker run -it --rm -v $(pwd):/project cunarvim'
 
 ## Source
 
-The source of this project is available on [Github](https://github.com/hrvthzslt/cunarvim).\
+The source of this project is available on [GitHub](https://github.com/hrvthzslt/cunarvim). Check it out if you are
+interested in the details.
