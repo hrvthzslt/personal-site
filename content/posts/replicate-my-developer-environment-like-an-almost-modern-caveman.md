@@ -1,7 +1,7 @@
 ---
 title: "Replicate My Developer Environment Like an Almost Modern Caveman"
 date: 2023-10-01T11:58:51Z
-draft: true
+draft: false
 ---
 
 I am simple man, therefore I like simple solutions for simple problems. My problem was the replication of my developer environment. It is simple because I only care about the shell environment, I don't need an army of dotfiles or desktop applications to make my workflow viable.
