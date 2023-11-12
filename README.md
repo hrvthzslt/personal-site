@@ -1,8 +1,8 @@
 # Personal site for my personal interests.
 
 This is the source of my personal website which is hosted
-on [https://zsolthorvath.netlify.com/](https://zsolthorvath.netlify.com/).
-If you want to know it about more this [post](https://zsolthorvath.netlify.app/posts/making-of-the-site/) will tell the
+on [https://zsolthorvath.xyz/](https://zsolthorvath.xyz/).
+If you want to know it about more this [post](https://zsolthorvath.xyz/posts/making-of-the-site/) will tell the
 story of how I made it.
 
 ## Setup for development
