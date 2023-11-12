@@ -4,7 +4,7 @@ date: 2023-11-10T14:41:49Z
 draft: false
 ---
 
-I was an Obsidian user for some time and I still really like it, but it was too much for my needs.
+I was an Obsidian user for some time and I still dig it, but it was too much for my needs. And the fact that it's a GUI program, did not jive well with my hunger to move my workflow to the mighty Command Line.
 There is only two function I need:
 
 - Creating a note to a destination
@@ -23,7 +23,7 @@ I kept the most important reason last: **It is dead simple** (like me).
 
 ## Note management
 
-So I technically can provide myself the two functionalities with gnu tools in the cli like a _komputer scientist_, and I did that but this needed to be more convenient, So I made a (accidentally) hundred line **shell script** solving this "problem".
+So I technically can provide myself the two functionalities with GNU utilities in the CLI like a _komputer scientist_, and I did that but this needed to be more convenient, So I made a (accidentally) hundred line **shell script** solving this "problem".
 
 [![asciicast](https://asciinema.org/a/UciUDOINZTiRMLnESDB96gByr.svg)](https://asciinema.org/a/UciUDOINZTiRMLnESDB96gByr)
 
@@ -33,7 +33,7 @@ You find all the information that you would need about it's usage.
 
 ## Go to Shell
 
-The more important thing is I did this because I wanted to do some good old **POSIX** complaint shell scripting like the cool kids (or like not cool old people, same thing). I choose shell because it has the most universal compatibility, then I used **fzf** and **rg** so I made requirements that won't be available in all machines. Did I made a mistake? I don't know, I don't care writing shell script this way was fun enough on itself.
+The more important thing is I did this because I wanted to do some good old **POSIX** complaint shell scripting like the cool kids (or like not cool old people, same thing). I choose shell because it has the most universal compatibility, then I used **fzf** and **rg** so I made requirements that won't be available in all machines, they are not core utils... Did I made a mistake? I don't know, I don't care, writing shell script this way was fun enough on itself.
 
 The primary knowledge source I used is: [https://www.shellscript.sh/](www.shellscript.sh), it's a beautiful site I highly recommend it if you're interested in this topic.
 
