@@ -1,7 +1,7 @@
 ---
 title: "minimalist Note management"
 date: 2023-11-10T14:41:49Z
-draft: true
+draft: false
 ---
 
 I was an Obsidian user for some time and I still really like it, but it was too much for my needs.
