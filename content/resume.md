@@ -1,6 +1,6 @@
 ---
 title: "Resume"
-subtitle: "Backend Developer"
+subtitle: "Software Developer"
 date: 2022-12-27T16:40:32+01:00
 draft: false
 ---
@@ -17,19 +17,19 @@ contributions to the team.
 
 ## Career
 
-- 2023 - Present - **Backend Developer** at [**Billingo**](https://www.billingo.hu/)
+- 2023 - Present - **Software Developer** at [**Billingo**](https://www.billingo.hu/)
 
-- 2021 - 2023 - **Backend Developer** at [**Webshippy**](https://webshippy.com/)
+- 2021 - 2023 - **Software Developer** at [**Webshippy**](https://webshippy.com/)
   - Developing and maintaining new features of the company's main product and onsite software with a stack containing 
   the following technologies: **PHP, MySql, Redis, Memcached**
   - Developing new features in microservices architecture with the help of **Laravel, Kafka, Docker**
 
-- 2020 - 2021 – **Backend Developer** at [**Mindtech Apps**](https://mindtechapps.com/)
+- 2020 - 2021 – **Software Developer** at [**Mindtech Apps**](https://mindtechapps.com/)
   - Developing backend Rest API with **PHP** and **Laravel**
   - Developing backend API with **GraphQL** with **Javascript/TypeScript** and **NestJs**
   - Assisting frontend team with API integrations
 
-- 2013 - 2020 – **Backend Developer at SR Limnatis Holdings Ltd**
+- 2013 - 2020 – **Software Developer at SR Limnatis Holdings Ltd**
   - Developing tube sites, administration site, cms and webmaster site and supporting services in **PHP**
   and **Javascript**
   - Refactor and rebuild legacy project from plain PHP to **Codeigniter** and years later to **Laravel**, support new

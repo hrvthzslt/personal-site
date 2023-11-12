@@ -3,7 +3,7 @@ languageCode: "en-us"
 title: "Zsolt Horváth"
 theme: "beautifulhugo"
 params:
-  logo: "images/profile.jpg"
+  logo: "images/best_avatar_rec_flat.png"
   year: "2022"
 Author:
   email: "hrvth.7slt@gmail.com"
