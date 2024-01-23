@@ -1,5 +1,8 @@
-#!/usr/bin/sh
+#!/bin/sh
 
-title=$(echo "$1" | tr '[:upper:]' '[:lower:]' | sd ' ' '_')
+main() {
+  title=$(echo "$@" | tr '[:upper:]' '[:lower:]' | sd ' ' '-')
+  docker compose exec hugo hugo new posts/"$title".md
+}
 
-docker-compose exec hugo hugo new posts/"$title".md
+main "$@"
