@@ -78,9 +78,7 @@ one to one translation of "Shell programming" and I found it hilarious.\
 All that said, I really like this. It's a good introduction to shell scripting. It has code
 examples, a lot of commands with explanation, a lot of tasks to solve with solutions and bad terminology
 translations (for example *pipeline* is more like *"pipe network"* in the translation).\
-I love it!\
-Although I didn't check, I'm not sure that the sha-bang `#!/bin/sh` is correct for every script. I'm sure the
-POSIX compliance police will deal with that.
+I love it!
 
 ### Microsoft MS-DOS Version 5.0 Manual - 1991
 
