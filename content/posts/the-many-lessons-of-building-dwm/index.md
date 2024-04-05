@@ -85,6 +85,8 @@ All I can show you...
 
 ![Wierd flex](wierd-flex.png)
 
+[Github repository](https://github.com/hrvthzslt/desktop)
+
 ---
 
 P.S.: This whole thing was deprecated before birth. Thanks Wayland!
