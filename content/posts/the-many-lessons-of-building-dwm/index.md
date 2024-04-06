@@ -1,7 +1,7 @@
 ---
 title: "The Many Lessons of Building Dwm"
 date: 2024-04-05T13:06:25Z
-draft: true
+draft: false
 ---
 
 ## Hard can be easier
