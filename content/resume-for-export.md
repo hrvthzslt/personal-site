@@ -1,16 +1,15 @@
----
-title: "Resume"
-subtitle: "Software Developer"
-date: 2022-12-27T16:40:32+01:00
-draft: false
----
+# Zsolt Horváth
+
+Software Developer with Backend focus 
+
+<img align="left" src="/home/me/snap/typora/88/.config/Typora/typora-user-images/image-20240514153421471.png" alt="image-20240514153421471" style="zoom:40%;" />
 
 ## About
 
 I have been interested in coding since my young age and began learning web development later on.
 I have since transitioned into a professional career in backend development,
 starting as a junior full-stack developer and gaining experience with a range of technologies and
-programming languages. I am currently a backend developer with a focus on building robust and scalable applications.\
+programming languages. I am currently a backend developer with a focus on building robust and scalable applications.
 I am constantly seeking to learn and improve my skills, and I am drawn to work environments where I can collaborate
 and learn from others. I am motivated by the opportunity to work towards well-defined goals and make meaningful
 contributions to the team.
@@ -51,9 +50,11 @@ contributions to the team.
 
 ## Education
 
-- 2010 - 2012 – **Szent György Média és Informatikai Szakgimnázium**\
+- 2010 - 2012 – **Szent György Média és Informatikai Szakgimnázium**
   Web Development Qualification by National Qualification Register
 
----
+## Contact
 
-[**Download**](/documents/zsolt-horvath.pdf)
+- hrvth.7slt@gmail.com
+- +3630 5481820
+- https://www.linkedin.com/in/zsolt-horvath-8779147a/
