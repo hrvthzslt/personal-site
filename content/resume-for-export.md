@@ -1,8 +1,8 @@
 # Zsolt Horváth
 
-Software Developer with Backend focus 
+Software Developer with Backend focus
 
-<img align="left" src="/home/me/snap/typora/88/.config/Typora/typora-user-images/image-20240514153421471.png" alt="image-20240514153421471" style="zoom:40%;" />
+<img align="left" src="/home/me/workspace/personal/personal-site/static/images/self.png" alt="image-20240514153421471" style="zoom:30%;" />
 
 ## About
 
@@ -18,9 +18,9 @@ contributions to the team.
 
 - 2023 - Present - **Software Developer** at [**Billingo**](https://www.billingo.hu/)
 
-  - Adding new features to the company's main product with **PHP, MySql, Redis, Elasticsearch** as main technologies.
+  - Adding new features to the company's main product with **PHP, Laravel, MySql, Redis, Elasticsearch** as main technologies.
   - Integrating data synchronization to external CRM system while not blocking user interaction.
-  - As a high impact change, which affected code base and deployment as well, I upgraded multiple **Laravel** versions and introduced config cache for mitigating the performance hit of the new version. I also adjusted the affected **Github Actions**.
+  - As a high impact change, which affected code base and deployment as well, I upgraded multiple framework versions and mitigated performance hits.
 
 - 2021 - 2023 - **Software Developer** at [**Webshippy**](https://webshippy.com/)
 
