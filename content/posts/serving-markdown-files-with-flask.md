@@ -6,6 +6,8 @@ draft: false
 
 I created a simple Flask app that serves markdown files. It use a folder structure for routing, reads the markdown file and converts it to HTML and serves it.
 
+<!--more-->
+
 Basicly the following structure:
 
 ```
@@ -34,7 +36,7 @@ Well, that's not true, I really like the concept of virtual environments. If you
 
 But what is confusing about this topic?
 
-If you want to deliver your application in your container the following question will come up:
+If you want to deliver your application in a container the following question will come up:
 
 - Should I use a virtual environment in my container? I could install the dependencies globally in the container. It would make sense.
 - If I don't use a virtual environment in the container how will I found the dependencies during local development?
@@ -78,12 +80,12 @@ I could not resist myself and created a `src` and a `test` folder.
     └── test_load_file.py
 ```
 
-Blueprint holds one blueprint which is the meat of the application. It is not necessary but I really like how blueprints organizes flasks building blocks. I like nice things, sue me.
+Blueprint holds one blueprint which is the meat of the application. It is not necessary, in this case I have only one, but I really like how blueprints organizes flasks building blocks. I like nice things, sue me.
 
 I created modules for **action**, **domain** and **responder**, and defined the routes in the **blueprint** module.
 If you're unfamiliar with this pattern I could explain it or I could say: `request -> action -> domain -> action -> responder -> response`. This is possibly the worst explanation ever but I hope you get the idea.
 
-Infrastructure is just for importing the flask cache module without a fabulous circular import.
+Infrastructure is just for importing the flask cache module without causing a fabulous circular import.
 
 I'm sure you know what **test** is for, and you write a lot. I'm sure you do. Good for you.
 
