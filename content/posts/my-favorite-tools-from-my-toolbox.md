@@ -6,6 +6,8 @@ draft: false
 
 Since the second half of the last year I started to build a collection of shell scripts that make some of my special use cases easier to handle. I want to share some of them with you.
 
+<!--more-->
+
 ## Wave Goodbye for My Aliases (Most of Them)
 
 I had a huge collection of aliases, lot of them are copied from other people, and it become a mess. There are two rules I made for handling this earth shattering crisis:

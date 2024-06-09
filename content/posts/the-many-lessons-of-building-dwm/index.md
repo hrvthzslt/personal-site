@@ -4,6 +4,10 @@ date: 2024-04-05T13:06:25Z
 draft: false
 ---
 
+The horrifying and uplifting tale of trying out window managers, hunting for packages, loosing functionality and building **dwm**.
+
+<!--more-->
+
 ## Hard can be easier
 
 I use Gnome with a POP Shell plugin for tiling functionality. That is a setup that I really like, I would even be alright with base Gnome if I had to. All that said, I wanted to try a tiling window manager, because it's not enough to use a computer, we have to **experience** it.
