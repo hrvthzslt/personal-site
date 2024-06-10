@@ -6,6 +6,8 @@ draft: false
 
 Let me present you the (I don't know how many, because I'm still writing this) points to survive in the world of shell scripting.
 
+<!--more-->
+
 ## 1. Shhhh...
 
 If you're new to shell scripting, and did not script any bash, you should consider not to do it, at least for a while. Bash has many wonderful advanced techniques, but it's also an advanced experience to read it.

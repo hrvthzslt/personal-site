@@ -6,6 +6,8 @@ draft: false
 
 I am simple man, therefore I like simple solutions for simple problems. My problem was the replication of my developer environment. It is simple because I only care about the shell environment, I don't need an army of dotfiles or desktop applications to make my workflow viable.
 
+<!--more-->
+
 ## Installation.
 
 I wanted to make this portable, which means it would work on Linux, MAC or even in WSL. If it's up to me I use the first, but life can bring surprises that you have to live with. Lucky for me there is a tool which makes this very easy.\

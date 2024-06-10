@@ -5,10 +5,15 @@ draft: false
 ---
 
 I was watching a video about the [90s web](https://www.youtube.com/watch?v=ZSBYO1BYrDM) and there I heard a thing that
-is so amusingly stupid by nowadays standards that I had to try it out.\
+is so amusingly stupid by nowadays standards that I had to try it out.
+
+<!--more-->
+
 Using scripts editing html by user input were a common practice. This is something that you only want try at home,
-because it has a lot of security issues. But I wanted to move this idea to the next level.\
-Why would I separate the html from the script? The script can provide the html and edit **itself**.\
+because it has a lot of security issues. But I wanted to move this idea to the next level.
+
+Why would I separate the html from the script? The script can provide the html and edit **itself**.
+
 Now that is what I call a **single** source of truth and the most PHP thing I can think of.
 
 ## The golden script
@@ -18,14 +23,12 @@ would like to point out the three most questionable parts:
 
 ### Permissions
 
-The script itself has to be readable, executable and writable by the webserver. With multiple files only the one
-containing the entries would have to be writeable.
+The script itself has to be readable, executable and writable by the webserver. Traditionally another script would write the html itself, but that is not cursed enough.
 
 ### Redirect
 
 The script has to do a redirect after the form is submitted, otherwise the change won't be visible. If the script
-includes
-the entries from another file, there would be no need for a redirect.
+includes the entries from another file, there would be no need for a redirect.
 
 ### Inserting the guestbook entries
 
@@ -50,10 +53,12 @@ function addEntry(string $name, string $message): void
 }
 ```
 
-TL;DR: Replace the string `<!-- ENTRIES -->` with itself and the new entry.\
+TL;DR: Replace the string `<!-- ENTRIES -->` with itself and the new entry.
+
 Of course the first time I replaced all occurrences, which broke the script. After that I was contemplating how should I
 replace only the first occurrence. I found some threads and read that the `substr_replace` method would be the most
-performant, so I choose `preg_replace`.\
+performant, so I choose `preg_replace`.
+
 To summarize the PHP script reads itself, replaces some part and rewrites itself with the whole content. This is such
 a horrible solution that it makes me love it even more.
 

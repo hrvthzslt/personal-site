@@ -4,13 +4,16 @@ date: 2024-01-23T20:35:18Z
 draft: false
 ---
 
-This is a topic which I should have understood a long time ago but I never really thought about it until I printed out my PATH variables. The horror or the output made me realize that I am on an unholy path, meaning there were several duplicated entries.
+This is a topic which I should have understood a long time ago, but I never really thought about it until I printed out my **PATH** variables. The horror of the output made me realize that I am on an unholy _path_, meaning there were several duplicated entries.
+
+<!--more-->
 
 The reason for this is I exported the PATH variable in my `.bashrc` file. The rc file is read every time when a new terminal session is started, so the additional PATH values will be appended every time.
 
 The proper place for PATH variables would be the `.profile` file (there are other options depending on the interactive shell, for example `.bash_profile` and `.bash_login`). This file is read only once when the user logs in.
 
 For clarification, the order and the precedence of the files are the following in my case:
+
 - `/bin/bash` - shell executable
 - `/etc/profile` - system wide, executed for login shell
 - `~/.profile` - personal, executed for login shell
