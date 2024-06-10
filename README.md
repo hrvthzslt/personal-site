@@ -7,10 +7,8 @@ story of how I made it.
 
 ## Setup for development
 
-Run start-dev.sh to start the development server.
-
 ```shell
-./start-dev.sh
+make start
 ```
 
 Or you can do the steps manually:
@@ -25,4 +23,22 @@ Start hugo server for development
 
 ```shell
 docker compose up -d
+```
+
+## Stop development container
+
+```shell
+make stop
+```
+
+## Observe logs
+
+```shell
+make log
+```
+
+## Create new post
+
+```shell
+make create-post
 ```
