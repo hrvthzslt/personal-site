@@ -19,9 +19,10 @@ contributions to the team.
 
 - 2023 - Present - **Software Developer** at [**Billingo**](https://www.billingo.hu/)
 
-  - Adding new features to the company's main product with **PHP, Laravel, MySql, Redis, Elasticsearch** as main technologies.
+  - Adding new features to the company's main product with **PHP, Laravel, MySql, Redis, Elasticsearch** and **Docker** as main technologies.
   - Integrating data synchronization to external CRM system while not blocking user interaction.
   - As a high impact change, which affected code base and deployment as well, I upgraded multiple framework versions and mitigated performance hits.
+  - Monitoring with **Grafana**, error tracking with **Sentry**, automating deployment with **Github Actions**, automating infrastructure with **Ansible**.
 
 - 2021 - 2023 - **Software Developer** at [**Webshippy**](https://webshippy.com/)
 
