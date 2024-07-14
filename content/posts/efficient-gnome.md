@@ -1,5 +1,5 @@
 ---
-title: "Make GNOME hella efficient"
+title: "Setting up a efficient GNOME experience"
 date: 2024-07-14T12:42:37Z
 draft: false
 ---
