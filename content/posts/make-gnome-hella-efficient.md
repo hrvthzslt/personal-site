@@ -16,7 +16,7 @@ But I needed to be more efficient with the keyboard.
 
 ## Looking nice or moving fast?
 
-The first thing I usually do when I use GNOME, I disable the animations. I know, they look good, but I use my computer as I would play a video game, I need that fast response time. (And I play video games like using a shitty computer, because I really like the Switch, I guess joke on me.)
+The first thing I usually do when I use GNOME: I disable the animations. I know, they look good, but I use my computer as I would play a video game, I need that fast response time. (And I play video games like using a shitty computer, because I really like the Switch, I guess joke on me.)
 
 In newer versions of GNOME, you can disable animations in the settings, or you can use `gsettings` like an old school hacker.
 
