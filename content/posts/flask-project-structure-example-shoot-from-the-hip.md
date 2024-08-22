@@ -115,3 +115,5 @@ The important thing is to make any separation by domain. Don't collect all your 
 The names of your building blocks doesn't matter, if you think layered structure should have other layers, **do it**, if you need read/write separation, **do it** ...as long as it is separated by domains.
 
 **But** when you decided what will your building blocks be, **stick to it**, if you choose layered architecture, don't create another module with an action-domain-responder structure (although you should check it out). So you don't have to think about the structure, and you'll have the energy to take care about the business logic. You know, the important part.
+
+[Check it on Github](https://github.com/hrvthzslt/flask-structure)
