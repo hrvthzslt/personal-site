@@ -58,10 +58,6 @@ The whole thing is sort of silly, but it is a good example for a project structu
 ```shell
 .
 ├── app.py
-├── Dockerfile
-├── Makefile
-├── README.md
-├── requirements.txt
 └── src
     ├── common
     │   └── infrastructure
