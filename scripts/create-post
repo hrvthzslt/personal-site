@@ -1,7 +1,7 @@
 #!/bin/sh
 
 create_post() {
-  title=$(echo "$@" | tr '[:upper:]' '[:lower:]' | sd ' ' '-')
+  title=$(echo "$@" | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
   docker compose exec hugo hugo new posts/"$title".md
 }
 

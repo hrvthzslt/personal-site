@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   hugo:
     image: jakejarvis/hugo-extended:0.101.0
