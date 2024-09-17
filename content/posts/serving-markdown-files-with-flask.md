@@ -111,4 +111,4 @@ This is what I use in the github action as well.
 
 I should write about makefiles, but that is a tale for another time.
 
-Thank you for reading, as most of the time there is no conclusion or lesson. Do some _computering_ and enjoy life!
+Thank you for reading, as most of the time there is no conclusion or lesson. Do some _computering™_ and enjoy life!

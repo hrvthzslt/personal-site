@@ -4,7 +4,7 @@ date: 2024-09-15T12:51:36Z
 draft: false
 ---
 
-My first exposure to _computing_ was with an Amiga 500, closely followed by a 386 PC, which I used for a long time. Because of this, I have a soft spot for games like **Flashback** and **Lost Vikings** and for programs like **Norton Commander**.
+My first exposure to _computering™_ was with an Amiga 500, closely followed by a 386 PC, which I used for a long time. Because of this, I have a soft spot for games like **Flashback** and **Lost Vikings** and for programs like **Norton Commander**.
 
 Since all this can be used in **DOS**, and since that was the first operating system I learned to use, it's time to replicate that experience.
 
@@ -40,7 +40,7 @@ It is software that I've been using for 20 years, primarily for retro games and 
 
 I chose to use **Dosbox Staging** because **Dosbox**, as far as I can tell, is not actively developed anymore.
 
-Staging has another really good feature: it has CRT filters that don't look like your dog's vomit. They are really great, and I'm happy because I don't have a CRT display.
+**Staging** has another really good feature: it has CRT filters that don't look like your dog's vomit. They are really great, and I'm happy because I don't have a CRT display.
 
 Another reason I chose **Dosbox Staging** is that this fork seemed the best for spending my time **in** DOS. You see, **Dosbox** can be used as an environment for running old programs and games; you don't need to use the DOS CLI. But that would go against the experience I aimed to achieve.
 
@@ -94,7 +94,7 @@ The following programs are in this folder:
 - Vim 7 (Text Editor, because it's funny)
 - Dosfetch (System Information)
 
-Really, writing **batch scripts** that don't even support conditions with **Vim** in **DOS** is the highest level of _computing_. Let me introduce you to `RUNNER.BAT`. If you pay attention, you will see it later as well.
+Really, writing **batch scripts** that don't even support conditions with **Vim** in **DOS** is the highest level of _computering™_. Let me introduce you to `RUNNER.BAT`. If you pay attention, you will see it later as well.
 
 ![Batching with Vim](batching-with-vim.png)
 
@@ -120,6 +120,8 @@ And for bling-bling I added dosfetch to the autoexec section, check it out:
 
 ![Dosfetch](dosfetch.png)
 
+## GAMES
+
 This folder holds all the games I want to play. If running them needs some special configuration, I will write a batch file for them.
 
 Lost Vikings, before the first run, needs to be configured, so I wrote a batch file for it.
@@ -140,6 +142,6 @@ runner VIKINGS.EXE "Lost Vikings"
 
 Yes, still no conditions.
 
-So the time came for reminiscing on Flashback, and finally playing through the first level. Just let me enter `cd GAMES\FBACK` and `flashback`, then...
+So the time came for reminiscing on Flashback, and finally playing through the first level. Just let me enter `cd GAMES\FBACK` and type `flashback`, then...
 
 ![Flashback](flashback.png)
