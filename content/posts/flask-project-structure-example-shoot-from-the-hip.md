@@ -1,5 +1,5 @@
 ---
-title: "Flask project structure example shoot from the hip"
+title: "Flask Project Structure Example Shoot From the Hip"
 date: 2024-08-17T16:34:07Z
 draft: false
 ---
