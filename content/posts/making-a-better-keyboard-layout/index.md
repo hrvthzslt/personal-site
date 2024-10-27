@@ -25,7 +25,7 @@ The first one I checked was **xmodmap**, but that program is tied to the X serve
 
 The second one was **kmonad**, which is configured with Haskell. _(Yes, that is the end of the sentence.)_ In the future, I want to learn it because it looks like a really cool cross-platform alternative.
 
-The winner was **[keyd](periphery)**, which is a daemon that listens to keyboard events and can be configured with a simple configuration file. You clone the repository, build it, and add it to systemd like a real computer user.
+The winner was **[keyd](https://github.com/rvaiya/keyd)**, which is a daemon that listens to keyboard events and can be configured with a simple configuration file. You clone the repository, build it, and add it to systemd like a real computer user.
 
 _If you think I should not use **systemd**, there is no need for a fistfight; please write a passionate letter about it, and we will keep it in the refrigerator for posterity._
 
@@ -41,7 +41,7 @@ capslock = overload(control, esc)
 
 Some people remap it to Esc, and some older layouts have it as Control, but rejoice everyone, **it's both**.
 
-If you have a not-so-dumb mechanical keyboard with **qmk** _(we're getting there, my dude, just not today)_, you may refer to this as Tap Hold. Let me spell it out for other well-adjusted people with other expensive hobbies: when you tap **Caps Lock**, it's **Esc**, and when you hold it, it's **Control**.
+If you have a not-so-dumb mechanical keyboard with **qmk** _(we're getting there, my dude, just not today)_, you may refer to this as Tap Hold. Let me spell it out for other well-adjusted people with less expensive hobbies: when you tap **Caps Lock**, it's **Esc**, and when you hold it, it's **Control**.
 
 Honestly, when I tried this, I was learning touch typing (for the 20th time, mind you), and I thought it was a really stupid idea. But in practice, it was so comfortable for me.
 
@@ -86,8 +86,8 @@ I am really not in the mood to spell out this configuration, so I made a nice dr
 
 ![Navigation Layer](navigation-layer.png)
 
-To make this comfortable, I used keys from the right side, since **Tab** is on the left side. The super + number mappings are for workspace switching. It may look odd that it starts from 4, but having one above my index finger is really nice. The other keys are for navigation in any non-keyboard-centric programs.
+To make this comfortable, I used keys from the right side, since **Tab** is on the left side. The super + number mappings are for workspace switching. It may look odd that it starts from **4**, but having **1** above my index finger is really nice. The other keys are for navigation in any non-keyboard-centric programs.
 
 This whole mapping has one added benefit I like: it works with the laptop keyboard as well.
 
-So check out **keyd**; it's a really cool program. I'm really happy with it.
+So check out **[keyd](https://github.com/rvaiya/keyd)**; it's a really cool program. I'm really happy with it.
