@@ -4,14 +4,14 @@ date: 2023-02-11T12:01:37Z
 draft: false
 ---
 
-## Why did I even make this site?
-
 I had a resume site with the content of the [resume](/resume/) page. I built a simple HTML site with the help of
 [materializecss](https://materializecss.com/) and hosted it on Heroku.
 
 I was happy with it, but it soon became a pain to edit. So when Heroku stopped hosting my site for free, I decided to
 make a new one. I wanted to make one that is easier to edit and maintain. I also wanted to learn a bit
 about [Hugo](https://gohugo.io/), so I decided to make this site with it.
+
+<!--more-->
 
 The ability to edit the content in markdown was really important for me, but it's a topic for another day.
 
