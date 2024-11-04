@@ -10,7 +10,7 @@ The short explanation is that they are status bars. The long explanation is the 
 
 <!--more-->
 
-These two status bars are primarily aimed to be used with the `dwm` window manager. This window manager has two important properties that make it different from others: it has the best default layout system (that I don't dare to mention by name in 2024) with the best window management implementation (tags > workspaces). And it is intended to be compiled by **you**.
+These two status bars are primarily aimed to be used with the `dwm` window manager. This window manager has two important properties that make it different from others: it has the best window management implementation (tags > workspaces). And it is intended to be compiled by **you**.
 
 In the words of the suckless team:
 
@@ -37,7 +37,7 @@ static const struct arg args[] = {
 };
 ```
 
-This will `printf` the percentage of RAM, CPU, and disk usage like 13%, 5%, 20% respectively.
+This will `printf` the percentage of RAM, CPU, and disk usage like `Mem: 13%`.
 
 The bar itself will refresh at a certain rate configured in seconds. This means all components will be updated at that rate. Moreover, if you want to trigger an update, you can kill the processes. The `killall -s USR1 slstatus` command sends the SIGUSR1 signal to all instances of the `slstatus` process. This signal can be used by `slstatus` to trigger a specific action, such as updating its displayed information.
 
@@ -81,6 +81,6 @@ But there is a silver lining. The shell scripts can be optimized or replaced wit
 
 ## Side Adventure!
 
-There is a **[patch](https://tools.suckless.org/slstatus/patches/signals/)** for `slstatus` for handling individual update rates and signals. This would be the perfect solution for me, but for some reason, the `cpu_perc` component ran on every update.
+There is a **[patch](https://tools.suckless.org/slstatus/patches/signals/)** for `slstatus` for handling individual update rates and signals. This would be the perfect solution for me, but for some reason, the `cpu_perc` component ran on every update. This made me very sad.
 
-So this was my rambling about optimized event-driven signal handling word-salad status bars. I hope you enjoyed it.
+So, this was my rambling about optimizing with event-driven signal handling word-salad status bars. I hope you enjoyed it.
