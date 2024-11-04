@@ -1,5 +1,5 @@
 ---
-title: "Replace Slstatus with Dwmblock While Contemplating Performance"
+title: "Replace Slstatus with Dwmblocks While Contemplating Performance"
 date: 2024-11-03T18:34:37Z
 draft: false
 ---
