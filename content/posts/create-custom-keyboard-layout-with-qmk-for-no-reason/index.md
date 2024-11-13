@@ -10,24 +10,28 @@ I was a really happy user of a Keychron Q11 when I decided I wanted to try the Q
 
 If you're a good observer, the title says there was no good reason to compile QMK, but I was talking about some problem. Don't be confused; this whole thing could have been handled without creating my own layout in QMK.
 
-## The Problem
+## Peaceful Times
 
 Not so long ago, I wrote about my custom [layout](/posts/making-a-better-keyboard-layout) that was applied with software in the OS itself. I happen to have mechanical keyboards that can be programmed themselves. You saw flying big words here like **QMK** and **VIA**; let's clear them up.
 
 - **QMK** is a keyboard firmware that controls key mapping, lighting, and other features of a keyboard.
 - **VIA** is a software that allows you to configure your keyboard in a graphical interface without flashing it.
 
-So I set up my layout in VIA for my Q11, and all was great. I use Caps Lock as Esc/Ctrl, so when I use a key combination with Ctrl, the handling of timing is really important. The press time and the release timeout have to be set up with values that will result in a nice typing experience, so when I roll over Ctrl and C, it will be detected. If this is not set up with the right values, Caps Lock has to be held firmly and for a long time to be used as Ctrl, which leads to a poor typing experience.
+So I set up my layout in **VIA** for my Q11, and all was great. I use Caps Lock as Esc/Ctrl, so when I use a key combination with Ctrl, the handling of timing is really important. The press time and the release timeout have to be set up with values that will result in a nice typing experience, so when I roll over Ctrl and C, it will be detected. If this is not set up with the right values, Caps Lock has to be held firmly and for a long time to be used as Ctrl, which is _yuck_.
 
 Now that experience in the Q11 (or even with software mapping with keyd) was great already.
 
-## Reflashing the Keyboard
+## Complication!
 
-But then, I got my Q8. I set up the layout in VIA, and it felt wrong. I knew that the Tap Hold functionality has an associated timeout value, referenced by the name **TAPPING_TERM** in QMK, and suspected that the Q8 firmware has a different value for it than the Q11. I was wrong, but I was on the right path.
+But then, I got my Q8. It is a beautiful beast, almost two kilograms of aluminum, so if you drop it on your foot, it will certanly break it and you may need assistance for walking for the rest of your life. It has an **Alice** (_akshually_ it's more like an **Arisu**) layout, but the most important thing to me that it has multiple buttont for the thumbs, so I can map Enter, Alt and Backspace to this area.
+
+![Q8](q8.png)
+
+I set up the layout in VIA, and it felt wrong. I knew that the Tap Hold functionality has an associated timeout value, referenced by the name **TAPPING_TERM** in QMK, and suspected that the Q8 firmware has a different value for it than the Q11. I was wrong, but I was on the right path.
 
 So I checked out the firmware version in **Keychron Launcher** (another program, it's Keychron's take on VIA) and it was older than what can be downloaded. Woo-ho, let's flash a keyboard.
 
-There is a designated software that would help me called **QMK Toolbox**. I use Linux, so that is not an option, joke on me. So I installed **qmk_firmware**, which provides the firmware (surprising) and a CLI tool. For my utmost pleasure, after some investigation, I found a package repository provided by the QMK team for Debian, so I installed it without much hassle.
+There is a designated software that would help me called **QMK Toolbox**. I use Linux, so that is not an option, joke on me. So I installed **qmk_firmware**, which provides the firmware (surprisingly) and a CLI tool. For my utmost pleasure, after some investigation, I found a package repository provided by the QMK team for Debian, so I installed it without much hassle.
 
 With the downloaded firmware and CLI tool, I was able to flash the keyboard. The problem was solved, the typing feeling was great again.
 
@@ -35,7 +39,7 @@ With the downloaded firmware and CLI tool, I was able to flash the keyboard. The
 
 But then I thought, why not compile QMK firmware with my own keymap? I already installed the tools for it. And as it turned out, QMK is prepared for this party!
 
-QMK provides the possibility to create changes in **user space** and in a **keymap**. User space changes are applied for all keymaps, and keymap changes are applied for a specific keymap. I created a new layout for the Q8. GitHub username is usually used for own keymaps, which in practice means that there is a folder called default for the default keymap and another called hrvthzslt for my custom one with the following files:
+QMK provides the possibility to create changes in **user space** and in a **keymap**. User space changes are applied for all custom keymaps, and keymap changes are applied for a specific keymap. I created a new layout for the Q8. GitHub username is usually used for own keymaps, which in practice means that there is a folder called default for the default keymap and another called hrvthzslt for my custom one with the following files:
 
 - `keymap.c` - the keymap itself
 - `rules.mk` - makefile rules for the keymap
@@ -101,7 +105,7 @@ qmk flash -kb keychron/q8/iso_encoder -km hrvthzslt
 
 Everything turned out wonderful. I had a custom build of the firmware with my own keymap, and I was really proud of myself after the first tests.
 
-## Complication
+## MORE Complication!
 
 I was really proud until I started typing as usual. The problem that I fixed with upgrading the firmware version came back with the custom build. **OH NO!**
 
