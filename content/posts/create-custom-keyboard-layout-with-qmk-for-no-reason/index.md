@@ -4,15 +4,15 @@ date: 2024-11-11T14:13:57Z
 draft: false
 ---
 
-I was a really happy user of a Keychron Q11 when I decided I wanted to try the Q8 as well. I really like layouts in the "alice" family, but when I set my layout up with VIA, something felt wrong. This sent me down a path that started with flashing new firmware to the keyboard and ended with compiling it with my own layout.
+I was a really happy user of a Keychron Q11 when I decided I wanted to try the Q8 as well. I really wanted a keyboard from the "Alice" family, but when I set my layout up with VIA, something felt wrong. This sent me down a path that started with flashing new firmware to the keyboard and ended with compiling it with my own layout.
 
 <!--more-->
 
-If you're a good observer, the title says there was no good reason to compile QMK, but I was talking about some problem. Don't be confused; this whole thing could have been handled without creating my own layout in QMK.
+If you're a good observer, the title says there was no good reason to compile QMK, but I was talking about some problem. Don't be confused; this whole thing could have been handled without compiling QMK.
 
 ## Peaceful Times
 
-Not so long ago, I wrote about my custom [layout](/posts/making-a-better-keyboard-layout) that was applied with software in the OS itself. I happen to have mechanical keyboards that can be programmed themselves. You saw flying big words here like **QMK** and **VIA**; let's clear them up.
+Not so long ago, I wrote about my custom [layout](/posts/making-a-better-keyboard-layout) that was applied with software in the OS itself. I happen to have mechanical keyboards that can be programmed themselves. You saw big words here like **QMK** and **VIA**; let's clear them up.
 
 - **QMK** is a keyboard firmware that controls key mapping, lighting, and other features of a keyboard.
 - **VIA** is a software that allows you to configure your keyboard in a graphical interface without flashing it.
@@ -23,7 +23,7 @@ Now that experience in the Q11 (or even with software mapping with keyd) was gre
 
 ## Complication!
 
-But then, I got my Q8. It is a beautiful beast, almost two kilograms of aluminum, so if you drop it on your foot, it will certanly break it and you may need assistance for walking for the rest of your life. It has an **Alice** (_akshually_ it's more like an **Arisu**) layout, but the most important thing to me that it has multiple buttont for the thumbs, so I can map Enter, Alt and Backspace to this area.
+But then, I got my Q8. It is a beautiful beast, almost two kilograms of aluminum, so if you drop it on your foot, it will certainly break it and you may need assistance for walking for the rest of your life. It has an **Alice** (_actually_ it's more like an **Arisu**) layout, but the most important thing to me is that it has multiple buttons for the thumbs, so I can map Enter, Alt, and Backspace to this area.
 
 ![Q8](q8.png)
 
@@ -91,7 +91,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 This is a macro that will press the Super key and 1 when the key is pressed and release them when the key is released. The `SAFE_RANGE` is a range of keycodes that can be used for custom keycodes, so **MA_SUP1** can be mapped on the keymap matrix.
 
-For validating that what I've done is remotely correct I can compile the firmware with the following command:
+For validating that what I've done is remotely correct, I can compile the firmware with the following command:
 
 ```bash
 qmk compile -kb keychron/q8/iso_encoder -km hrvthzslt
