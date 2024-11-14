@@ -17,17 +17,17 @@ Not so long ago, I wrote about my custom [layout](/posts/making-a-better-keyboar
 - **QMK** is a keyboard firmware that controls key mapping, lighting, and other features of a keyboard.
 - **VIA** is a software that allows you to configure your keyboard in a graphical interface without flashing it.
 
-So I set up my layout in **VIA** for my Q11, and all was great. I use Caps Lock as Esc/Ctrl, so when I use a key combination with Ctrl, the handling of timing is really important. The press time and the release timeout have to be set up with values that will result in a nice typing experience, so when I roll over Ctrl and C, it will be detected. If this is not set up with the right values, Caps Lock has to be held firmly and for a long time to be used as Ctrl, which is _yuck_.
+So I set up my layout in **VIA** for my Q11, and all was great. I use Caps Lock as Esc/Ctrl, so when I use a key combination with Ctrl, the handling of timing is really important. The press time and the release timeout have to be set up with values that will result in a nice typing experience, so when I roll over Ctrl and C, it will be detected. If this is not set up with the right values, Caps Lock has to be held firmly and for a long time to be used as Ctrl, _yuck_!
 
 Now that experience in the Q11 (or even with software mapping with keyd) was great already.
 
 ## Complication!
 
-But then, I got my Q8. It is a beautiful beast, almost two kilograms of aluminum, so if you drop it on your foot, it will certainly break it and you may need assistance for walking for the rest of your life. It has an **Alice** (_actually_ it's more like an **Arisu**) layout, but the most important thing to me is that it has multiple buttons for the thumbs, so I can map Enter, Alt, and Backspace to this area.
+But then, I got my Q8. It is a beautiful beast, almost two kilograms of aluminum, so if you drop it on your foot, it will certainly break it and you may need assistance for walking for the rest of your life. It has an **Alice** (_ackshually_ it's more like an **Arisu**) layout, but the most important thing to me is that it has multiple buttons for the thumbs, so I can map Enter, Alt, and Backspace to this area.
 
 ![Q8](q8.png)
 
-I set up the layout in VIA, and it felt wrong. I knew that the Tap Hold functionality has an associated timeout value, referenced by the name **TAPPING_TERM** in QMK, and suspected that the Q8 firmware has a different value for it than the Q11. I was wrong, but I was on the right path.
+I set up the layout in VIA, and it felt wrong. I knew that the Tap Hold functionality has an associated timeout value, referenced by the name `TAPPING_TERM` in QMK, and suspected that the Q8 firmware has a different value for it than the Q11. I was wrong, but I was on the right path.
 
 So I checked out the firmware version in **Keychron Launcher** (another program, it's Keychron's take on VIA) and it was older than what can be downloaded. Woo-ho, let's flash a keyboard.
 
@@ -39,14 +39,12 @@ With the downloaded firmware and CLI tool, I was able to flash the keyboard. The
 
 But then I thought, why not compile QMK firmware with my own keymap? I already installed the tools for it. And as it turned out, QMK is prepared for this party!
 
-QMK provides the possibility to create changes in **user space** and in a **keymap**. User space changes are applied for all custom keymaps, and keymap changes are applied for a specific keymap. I created a new layout for the Q8. GitHub username is usually used for own keymaps, which in practice means that there is a folder called default for the default keymap and another called hrvthzslt for my custom one with the following files:
+QMK provides the possibility to create changes in **user space** and in a **keymap**. User space changes are applied for all custom keymaps for a user, and keymap changes are applied for a specific keyboard for a user. I created a new layout for the Q8. GitHub username is usually used for own keymaps, which in practice means that there is a folder called `default` for the default keymap and another called `hrvthzslt` for my custom one with the following files:
 
 - `keymap.c` - the keymap itself
 - `rules.mk` - makefile rules for the keymap
 
-Without going into details, the keymap is a 2D array of keycodes organized by layers, and the rules.mk file is a makefile that tells QMK how to compile the keymap. Furthermore, macros have to be programmed here as well. With experience in C (which I lack) and a lot of documentation reading, this can be done fairly easily.
-
-Usually, these changes are tracked in a forked repository of the QMK firmware, but I did not want the whole package, so I created a repository only with the files that are related to my **user space** and **keymaps** and created symlinks to the QMK codebase. This may seem ugly, but when I need the whole development environment, I can just open the QMK project instead of my repository with only my custom files. Maybe a mistake, but it's clearer for me for now.
+Without going into details, the keymap is a 2D array of keycodes organized by layers. Furthermore, macros have to be programmed here as well. With experience in C (which I lack) and a lot of documentation reading, this can be done fairly easily.
 
 ## QMK Tips
 
@@ -56,7 +54,7 @@ Advanced mappings can be defined for future references like:
 #define MT_CTES MT(MOD_LCTL,KC_ESC)
 ```
 
-This is a Tap Hold for Ctrl and Esc, and now can be referenced as **MT_CTES** in the keymap matrix.
+This is a Tap Hold for Ctrl and Esc, and now can be referenced as `MT_CTES` in the keymap matrix.
 
 Macros can be set up with catching inputs with the `process_record_user` function.
 
@@ -89,7 +87,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 ```
 
-This is a macro that will press the Super key and 1 when the key is pressed and release them when the key is released. The `SAFE_RANGE` is a range of keycodes that can be used for custom keycodes, so **MA_SUP1** can be mapped on the keymap matrix.
+This is a macro that will press the Super key and 1 when the key is pressed and release them when the key is released. The `SAFE_RANGE` is a range of keycodes that can be used for custom keycodes, so `MA_SUP1` can be mapped on the keymap matrix.
 
 For validating that what I've done is remotely correct, I can compile the firmware with the following command:
 
@@ -109,10 +107,12 @@ Everything turned out wonderful. I had a custom build of the firmware with my ow
 
 I was really proud until I started typing as usual. The problem that I fixed with upgrading the firmware version came back with the custom build. **OH NO!**
 
-So after two days of documentation reading and trying out different values for the **TAPPING_TERM**, I found out that I need another setting. The culprit is called **HOLD_ON_OTHER_KEY_PRESS**. This means when I pressed a key with Tap Hold mapping, the modifier layer will be active until other keys are pressed, making key combos with Ctrl comfortable again.
-
-I think this means that the firmware that I downloaded is not compiled directly from the QMK repository, **or** compiled with some options that I'm not familiar with.
+So after two days of documentation reading and trying out different values for the `TAPPING_TERM`, I found out that I need another setting. The culprit is called `HOLD_ON_OTHER_KEY_PRESS`. This means when I pressed a key with Tap Hold mapping, the modifier layer will be active until other keys are pressed, making key combos with Ctrl comfortable again.
 
 I also lost the reset functionality of the Q11, reimplemented it with a macro, and added it to the Q8 as well. One hand takes, the other gives.
+
+**VIA** compatibility also disappeared, but the `VIA_ENABLE` rule in the `rules.mk` file came to the rescue.
+
+I think all this means that the firmware that I downloaded is not compiled directly from the QMK repository, **or** compiled with some options that I'm not familiar with.
 
 To be honest, this was one of the more frustrating side projects I've done, but still, I learned a lot and had at least some fun. You can check out the repository [here](https://github.com/hrvthzslt/qmk-layouts)
