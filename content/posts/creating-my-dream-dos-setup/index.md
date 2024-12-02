@@ -142,6 +142,6 @@ runner VIKINGS.EXE "Lost Vikings"
 
 Yes, still no conditions.
 
-So the time came for reminiscing on Flashback, and finally playing through the first level. Just let me enter `cd GAMES\FBACK` and type `flashback`, then...
+So the time came for reminiscing on Flashback, and finally playing through the first level. Just let me enter `cd GAMES\FBACK` and type `fb`, then...
 
 ![Flashback](flashback.png)
