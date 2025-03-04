@@ -4,7 +4,7 @@ date: 2025-03-03T07:37:00Z
 draft: true
 ---
 
-Some of the conversation around AI I found interesting, but more of it I found tiring. What I never find boring is running technologies on your own machine.
+Some of the conversation around AI I found interesting, and some of it tiring. What I never find boring is running technologies on your own machine.
 
 So I was delighted when I tried **Ollama** and created my own Shakespeare.
 
@@ -12,7 +12,7 @@ So I was delighted when I tried **Ollama** and created my own Shakespeare.
 
 ## Ollama
 
-After two months of caring about a baby, not a pet project (well, my projects are more like a pet of a pet project in scope, but that is beside the point), I wanted to try something new. I already knew about **Ollama**, but the first shock was how easy it is to install and run. With appropriate hardware, it is possible to set up your own "Home AI" with multiple models, without any hassle.
+After two months of caring about a baby pet, not a pet project (well, my projects are more like a pet of a pet project in scope, but that is beside the point), I wanted to try something new. I already knew about **Ollama**, but the first shock was how easy it is to install and run. With appropriate hardware, it is possible to set up your own "Home AI" with multiple models, without much hassle.
 
 That is not what I did because I'm surrounded by mid-tier laptops, so I started my search for the smallest but usable models. Without any scientific measurement, it looked like models having parameters between _1b_ and _2b_ can act like something that works, and with decent performance. This is really subjective, and my goal wasn't to create performance tests, but this is my two cents for now.
 
@@ -67,6 +67,6 @@ If you want to try it, please check out the [repository](https://github.com/hrvt
 
 Build silly things and enjoy life!
 
-P.S: I did not explain my stance on the current commercial state of AI, so let me do it now: 
+P.S: I did not explain my stance on the current state of commercial AI, so let me do it now: 
 
 ![Ian Malcolm](ian.png)
