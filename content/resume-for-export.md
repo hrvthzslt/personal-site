@@ -16,7 +16,12 @@ contributions to the team.
 
 ## Career
 
-- 2023 - Present - **Software Developer** at [**Billingo**](https://www.billingo.hu/)
+- 2024 - Present - **Staff Software Engineer** at [**Byborg Enterprises**](https://www.byborgenterprises.com/)
+
+  - Planning and developing new features for a legacy streaming site and its services under heavy traffic with performance awareness using **Python, Flask, MySql, Redis, Elasticsearch, Kafka**, and **Docker**.
+  - Contributing to the introduction of new technologies.
+
+- 2023 - 2024 - **Software Developer** at [**Billingo**](https://www.billingo.hu/)
 
   - Adding new features to the company's main product with **PHP, Laravel, MySql, Redis, Elasticsearch** and **Docker** as main technologies.
   - Integrating data synchronization to external CRM system while not blocking user interaction.
