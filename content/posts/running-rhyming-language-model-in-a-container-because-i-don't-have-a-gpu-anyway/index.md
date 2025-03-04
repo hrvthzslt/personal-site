@@ -1,7 +1,7 @@
 ---
 title: "Running a Rhyming Language Model in a Container Because I Don't Have a GPU Anyway"
 date: 2025-03-03T07:37:00Z
-draft: true
+draft: false
 ---
 
 Some of the conversation around AI I found interesting, and some of it tiring. What I never find boring is running technologies on your own machine.
