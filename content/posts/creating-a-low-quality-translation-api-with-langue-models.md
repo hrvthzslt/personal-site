@@ -4,7 +4,7 @@ date: 2025-03-18T10:08:57Z
 draft: false
 ---
 
-After experimenting with local language models using **ollama**, the time has come to create something with it. During a conversation, it was suggested that it could be used to automate translation processes.
+After [experimenting with local language models using **ollama**](/posts/running-rhyming-language-model-in-a-container-because-i-dont-have-a-gpu-anyway/), the time has come to create something with it. During a conversation, it was suggested that it could be used to automate translation processes.
 
 <!--more-->
 
