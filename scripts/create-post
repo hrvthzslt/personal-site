@@ -2,7 +2,7 @@
 
 create_post() {
   title=$(echo "$@" | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
-  docker compose exec hugo hugo new posts/"$title"/index.md
+  UID=$(id -u) GID=$(id -g) docker compose exec hugo hugo new posts/"$title"/index.md
 }
 
 main() {

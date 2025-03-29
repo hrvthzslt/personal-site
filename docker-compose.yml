@@ -5,4 +5,5 @@ services:
       - 1313:1313
     volumes:
       - ./:/src
+    user: "${UID}:${GID}"
     command: server --buildDrafts --buildFuture --bind 0.0.0.0
