@@ -85,6 +85,23 @@ And the quickfix list looks fabulous:
 
 ![Vim quickfix](vim-quickfix.png)
 
+### Code completion
+
+This will be as well the built in method, which is the `CTRL` + `n` and `CTRL` + `p` key combinations. This will show the completion menu, and you can select the one you want. I changed the completion source order so the first priority is the current file the second is the tags, and after that all the others
+
+```vim
+set completeopt=menuone,longest,preview
+set complete=.,t,w,b,u
+```
+
+Here I type "pr" and the first suggestion is from the current buffer, the second is from the tags, and the third is another buffer:
+
+![Vim autocomplete](vim-comp.png)
+
+This can be further improved with the usage of omni completion, but I did not discover that yet.
+
+### Summary
+
 These are the most important features in my opinion, but I have to mention two things:
 
 - This can scale poorly in large code bases, since text based search will result in a lot of false positives.
