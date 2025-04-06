@@ -35,7 +35,7 @@ I want to present the usage of **keyd** in one line, which will make the Caps Lo
 
 Create the file `/etc/keyd/default.conf` with the following content:
 
-```
+```toml
 capslock = overload(control, esc)
 ```
 
@@ -57,7 +57,7 @@ You already use layers in your keyboard; for example, when you press **Shift**, 
 
 The configuration is the following:
 
-```
+```toml
 tab = overload(nav, tab)
 
 [nav]

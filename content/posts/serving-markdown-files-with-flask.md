@@ -10,7 +10,7 @@ I created a simple Flask app that serves markdown files. It uses a folder struct
 
 Basically, the following structure:
 
-```
+```shell
 .
 └── content
     └── content_management
@@ -21,7 +21,7 @@ Basically, the following structure:
 
 Will be served as two routes:
 
-```
+```shell
 /content_management
 /content_management/route_example
 ```
@@ -62,7 +62,7 @@ When I first created this whole thing, I took one file, and it would never becom
 
 I could not resist myself and created a `src` and a `test` folder.
 
-```
+```shell
 ├── src
 │   ├── blueprint
 │   │   └── markdown_server

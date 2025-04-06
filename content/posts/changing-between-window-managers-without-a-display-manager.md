@@ -23,7 +23,7 @@ The main thing is that Display Managers have the capability to switch between De
 
 I log in on a _tty_, and if that is _tty1_, `startx` command runs automatically. This starts the X server (display server) and runs the `~/.xinitrc` script. This script starts `dwm`. Then `dwm` starts the other programs that are needed for a functional graphical environment.
 
-```
+```shell
 TTY1 -> X server -> dwm -> programs
 ```
 

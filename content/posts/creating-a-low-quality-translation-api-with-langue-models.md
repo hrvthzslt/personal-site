@@ -22,7 +22,7 @@ This performed quite well, but some models have complicated templates, so I made
 
 All in all, the modelfile looks like this:
 
-```
+```Dockerfile
 FROM basemodel
 
 PARAMETER temperature 0.6
@@ -50,7 +50,7 @@ The template and system instructions will influence every prompt that is sent to
 
 We can observe the composed message if we run ollama in debug mode:
 
-```
+```Dockerfile
 <|start_header_id|>system<|end_header_id|>
 You're a translation model.
 The requests you receive will contain the source language and the target language, and the text to be translated.
