@@ -46,6 +46,8 @@ QMK provides the possibility to create changes in **user space** and in a **keym
 
 Without going into details, the keymap is a 2D array of keycodes organized by layers. Furthermore, macros have to be programmed here as well. With experience in C (which I lack) and a lot of documentation reading, this can be done fairly easily.
 
+_Edit: [Read](/posts/qmk-userspaces-and-a-silly-man/) about how I managed this incorrectly the first time, and how it can actually be done._
+
 ## QMK Tips
 
 Advanced mappings can be defined for future references like:
