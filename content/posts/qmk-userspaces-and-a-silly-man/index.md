@@ -36,6 +36,8 @@ qmk userspace-add -kb keychron/q11/iso_encoder -km hrvthzslt
 
 Certainly looks better than triple the symlinks I had done. And no pesky warnings either.
 
+And we have a **side adventure**! While checking out the example [repository](https://github.com/qmk/qmk_userspace), I found a **GitHub Action** that builds all the firmware in a _userspace_. That is really convenient, and creating binaries with automation is a good practice because distributing handmade ones can result in an [**xz** backdoor](https://en.wikipedia.org/wiki/XZ_Utils_backdoor).
+
 So the **moral** of the story is: really read the friendly manual.
 
-_(This post mentions "userspace" and "QMK" seven times —not including references and commands— and "symlink" four times. Maybe I'm not a writer. Interesting.)_
+_(This post mentions "userspace" and "repository" eight-, "QMK" seven times —not including references and commands— and "symlink" four times. Maybe I'm not a writer. Interesting.)_
