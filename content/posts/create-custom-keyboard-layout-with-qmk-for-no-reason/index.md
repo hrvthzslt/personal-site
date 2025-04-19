@@ -48,7 +48,6 @@ Without going into details, the keymap is a 2D array of keycodes organized by la
 
 _Edit: [Read](/posts/qmk-userspaces-and-a-silly-man/) about how I managed this incorrectly the first time, and how it can actually be done._
 
-
 ## QMK Tips
 
 Advanced mappings can be defined for future references like:

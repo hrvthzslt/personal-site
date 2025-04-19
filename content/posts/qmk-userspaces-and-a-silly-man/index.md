@@ -22,7 +22,7 @@ This is nice, but the questionable part is how I created this _userspace_. You c
 
 This works technically, but it was causing one very annoying little warning. Since this symlink causes changes in the **QMK** sources, which is a git repository, every update yells at me with a `QMK is ready to go, but minor problems were found` message. Yuck! ...And overall, it feels like a hacky solution among hacks.
 
-When I was checking out the documentation, I found out that everything I tried to do is already available as a feature. I don't have to fork the whole firmware repository; I can create a _userspace_ repository.
+When I was checking out the documentation, I found out that everything I tried to do is already available as a feature. I don't have to fork the whole firmware repository; I can create an external _userspace_ repository.
 
 Credit to me: because of the symlinking method, I had already structured the files as needed, so my _userspace_-wide changes and custom _layouts_ were in the right place. The repository needed a `qmk.json` file, which contains information that helps the repository to be recognized as a _userspace_.
 
