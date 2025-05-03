@@ -1,0 +1,17 @@
+@startuml
+actor user
+participant sxhkd
+participant power
+participant dmenu
+participant powerprofilesctl as ppctl
+participant dwmblocks
+
+user -> sxhkd: Key press
+sxhkd -> power: Call for set
+power -> dmenu: List profiles
+dmenu -> power: Return selected profile
+power -> ppctl: Set profile
+sxhkd -> dwmblocks: Send signal
+dwmblocks -> power: Get profile
+dwmblocks -> dwmblocks: Show profile
+@enduml
