@@ -1,5 +1,5 @@
 ---
-title: "Power Management Adventures of Linux Desktop"
+title: "Power Management Adventures on the Linux Desktop"
 date: 2025-05-01T15:12:48Z
 draft: false
 ---
