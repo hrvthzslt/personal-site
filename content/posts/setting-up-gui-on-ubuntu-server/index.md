@@ -105,3 +105,76 @@ This picture called _Two terminals one runner_.
 
 ## Ricing!
 
+As much as I love `dmenu` just to spice things up we're going to use `rofi`, since it's available in Ubuntu repositories go ahead and install it. Test if with the following command:
+
+```shell
+rofi -show run -theme purple
+```
+
+This theme will be our base, we will need to configure **sxwm**, but before that let's install some more programs.
+
+For terminal install `alacritty`, which is in the repositories, the only reason why we use it that I really like it and it's widely available.
+
+For browser let's install **Firefox** because that is not a [controversial browser in 2025](https://www.computerworld.com/article/3836787/strong-criticism-of-mozillas-new-firefox-user-agreement.html). Be so brave and run:
+
+```shell
+sudo apt install firefox
+```
+
+And if you done everything right you should see:
+
+![Firefox fail](firefox-fail.png)
+
+I did say removing snap will bite back! Since we're holding it with `apt-mark` and it is a dependency for **Firefox** we cannot install it. But we can use the **Mozilla PPA**.
+
+```shell
+sudo add-apt-repository ppa:mozillateam/ppa
+sudo apt install firefox-esr
+```
+
+The configuration of **sxwm** will happen in the following file: `$HOME/.config/sxwmrc`, the default config can be found in the git repository, it's `default_sxrc`.
+
+Let's change what applications are lanched with the keybindings
+
+```
+bind : mod + Return : "alacritty"
+bind : mod + b : "firefox-esr"
+bind : mod + p : "rofi -show run -theme purple"
+```
+
+And change colors to match **rofi**:
+
+```conf
+focused_border_colour    : #b4b4b4
+unfocused_border_colour  : #815ba4
+swap_border_colour       : #ef6155
+```
+
+Pressing `Super+r` will apply the changes in the current sessions, remember _hot reload_.
+
+Adding a wallpaper would be nice as well so install `ubuntu-wallpapers` and `feh`. We will use it soon!
+
+The last thing I want is a status bar before we check out the configuration, a status bar. Luckily for us the creator of **sxwm** created **sxbar**. Clone the [repository](https://github.com/uint23/sxbar) and run `make && sudo make install` in it.
+
+If you want to change the appearance of the bar, you need to edit a header file `src/config.h`:
+
+```c
+#define BAR_COLOR_BG		"#2e1d2e"
+#define BAR_COLOR_FG		"#b4b4b4"
+#define BAR_COLOR_BORDER	"#b4b4b4"
+
+#define BAR_WS_HIGHLIGHT_LEFT	""
+#define BAR_WS_HIGHLIGHT_RIGHT	"*"
+```
+
+This will change the colors to again match **rofi** and change how highlight is visualized. Rebuild it with: `sudo make clean install`.
+
+For all our work to come alive we need to edit the `.xinitrc` file:
+
+```
+feh --bg-fill /usr/share/backgrounds/Ubuntu_tide_by_lost-cause-light.png
+sxbar&
+sxwm
+```
+
+This will set the background, starts **sxbar** in the **background** and start **sxwm**.
