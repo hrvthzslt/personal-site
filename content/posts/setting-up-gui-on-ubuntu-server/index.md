@@ -158,7 +158,7 @@ Pressing `Super+r` will apply the changes in the current session—remember, _ho
 
 Adding a wallpaper would be nice as well, so install `ubuntu-wallpapers` and `feh`. We will use it soon!
 
-The last thing I want is a status bar before we check out the configuration—a status bar. Luckily for us, the creator of **sxwm** created **sxbar**. Clone the [repository](https://github.com/uint23/sxbar) and run `make && sudo make install` in it.
+The last thing I want is a status bar. Luckily for us, the creator of **sxwm** created **sxbar**. Clone the [repository](https://github.com/uint23/sxbar) and run `make && sudo make install` in it.
 
 If you want to change the appearance of the bar, you need to edit a header file `src/config.h`:
 
@@ -187,7 +187,9 @@ This will set the background, start **sxbar** in the **background**, and start *
 
 ## The Result
 
-Let me present to you the fruit of our hard work: running this site locally with Docker while inspecting logs and opening the runner:
+Let me present to you the fruit of our hard work!
+
+In this image I'm running this site locally with Docker while inspecting logs and opening the runner:
 
 ![End Result](end-result.png)
 
