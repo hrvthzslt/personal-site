@@ -21,8 +21,8 @@ Without starting any religious war, we will remove `snap`. There are a couple of
 Luckily in **Ubuntu Server** this is very easy, _it will bite back, but that is part of the fun_. You can check how many snap packages you have with: `snap list`, If you did not install any extra packages this should be zero, which is great snap can be removed. We will remove it, and hold back:
 
 ```shell
-apt remove --purge snapd
-apt-mark hold snapd
+sudo apt remove --purge snapd
+sudo apt-mark hold snapd
 ```
 
 No snappy snap snaps after this.
@@ -78,7 +78,7 @@ In this cases you can surf trough the _interwebz_ for answer, but I have a bette
 ```shell
 sudo apt install apt-file
 sudo apt-file update
-sudo apt-file search X11/Xcursor/Xcursor.h
+apt-file search X11/Xcursor/Xcursor.h
 ```
 
 Now we see that `libxcursor-dev` package needs to be installed, do that. Run `make` and `sudo make install` so **sxwm** is built and installed.
@@ -165,7 +165,7 @@ If you want to change the appearance of the bar, you need to edit a header file 
 #define BAR_COLOR_FG		"#b4b4b4"
 #define BAR_COLOR_BORDER	"#815ba4"
 
-#define BAR_FONT			"3x13bold"
+#define BAR_FONT			"8x13bold"
 
 #define BAR_WS_HIGHLIGHT_LEFT	""
 #define BAR_WS_HIGHLIGHT_RIGHT	"*"
