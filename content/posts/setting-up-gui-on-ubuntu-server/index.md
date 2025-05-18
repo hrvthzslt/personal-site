@@ -136,17 +136,19 @@ The configuration of **sxwm** will happen in the following file: `$HOME/.config/
 
 Let's change what applications are lanched with the keybindings
 
-```
+```shell
 bind : mod + Return : "alacritty"
 bind : mod + b : "firefox-esr"
 bind : mod + p : "rofi -show run -theme purple"
 ```
 
-And change colors to match **rofi**:
+And change colors to match **rofi**, and change border width:
 
-```conf
-focused_border_colour    : #b4b4b4
-unfocused_border_colour  : #815ba4
+```shell
+border_width:            : 2
+
+focused_border_colour    : #815ba4
+unfocused_border_colour  : #b4b4b4
 swap_border_colour       : #ef6155
 ```
 
@@ -161,20 +163,30 @@ If you want to change the appearance of the bar, you need to edit a header file 
 ```c
 #define BAR_COLOR_BG		"#2e1d2e"
 #define BAR_COLOR_FG		"#b4b4b4"
-#define BAR_COLOR_BORDER	"#b4b4b4"
+#define BAR_COLOR_BORDER	"#815ba4"
+
+#define BAR_FONT			"3x13bold"
 
 #define BAR_WS_HIGHLIGHT_LEFT	""
 #define BAR_WS_HIGHLIGHT_RIGHT	"*"
 ```
 
-This will change the colors to again match **rofi** and change how highlight is visualized. Rebuild it with: `sudo make clean install`.
+This will change the colors to again match **rofi** and change how highlight is visualized and the font as well. Rebuild it with: `sudo make clean install`.
 
 For all our work to come alive we need to edit the `.xinitrc` file:
 
-```
+```shell
 feh --bg-fill /usr/share/backgrounds/Ubuntu_tide_by_lost-cause-light.png
 sxbar&
 sxwm
 ```
 
 This will set the background, starts **sxbar** in the **background** and start **sxwm**.
+
+## The Result
+
+Let me present you, the fruit of our hard work. Running this site locally with docker while inspecting logs and opening the runner:
+
+![End Result](end-result.png)
+
+If you made it to the end let me congratulate, I hope you enjoyed very much this _computering™_ adventure.
