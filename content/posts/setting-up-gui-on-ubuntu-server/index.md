@@ -8,9 +8,9 @@ Instead of the usual rambling, I'll make a guide for something that I find reall
 
 <!--more-->
 
-**This guide was created with Ubuntu 25.04, and the tools we use are subject to change. The steps may change as time passes!**
+**This guide was created for Ubuntu 25.04, and the tools we use are subject to change. The steps may change as time passes!**
 
-## Setting Up Ubuntu
+## Preparing Ubuntu
 
 If you expected that I would guide you through the installation, you will be disappointed. Download the server ISO, install it on a machine or a VM—I will use the latter. Finish the installation, and do not install any additional packages that could be handy for a server; we won't need them. Do an `update` and `upgrade`, and you should see something like this when you find out who and where you are:
 
@@ -107,7 +107,7 @@ This picture is called _Two terminals one runner_.
 
 ## Ricing!
 
-As much as I love `dmenu`, just to spice things up we're going to use `rofi`. Since it's available in Ubuntu repositories, go ahead and install it. Test it with the following command:
+As much as I love **dmenu**, just to spice things up we're going to use **rofi**. Since it's available in Ubuntu repositories, go ahead and install it. Test it with the following command:
 
 ```shell
 rofi -show run -theme purple
@@ -115,7 +115,7 @@ rofi -show run -theme purple
 
 This theme will be our base. We will need to configure **sxwm**, but before that, let's install some more programs.
 
-For the terminal, install `alacritty`, which is in the repositories. The only reason why we use it is that I really like it and it's widely available.
+For the terminal, install **alacritty**, which is in the repositories. The only reason why we use it is that I really like it and it's widely available.
 
 For the browser, let's install **Firefox** because that is not a [controversial browser in 2025](https://www.computerworld.com/article/3836787/strong-criticism-of-mozillas-new-firefox-user-agreement.html). Be so brave and run:
 
