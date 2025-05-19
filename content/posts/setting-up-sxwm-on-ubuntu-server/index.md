@@ -1,5 +1,5 @@
 ---
-title: "Setting Up GUI on Ubuntu Server"
+title: "Setting Up SXWM on Ubuntu Server"
 date: 2025-05-17T07:39:09Z
 draft: false
 ---
