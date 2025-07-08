@@ -1,0 +1,20 @@
+{{ define "main" }}
+  {{ .Content }}
+  {{ $paginator := .Paginate (where site.RegularPages "Section" "posts") 8 }}
+  {{ range $paginator.Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    <i><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></i>
+    {{ .Summary }}
+  {{ end }}
+
+  {{ if gt $paginator.TotalPages 1 }}
+    <nav class="pagination">
+      {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}">Previous</a>
+      {{ end }}
+      {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}">Next</a>
+      {{ end }}
+    </nav>
+  {{ end }}
+{{ end }}

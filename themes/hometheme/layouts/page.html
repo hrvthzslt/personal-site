@@ -1,0 +1,12 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+<nav>
+    {{ with .Prev }}
+        <a href="{{ .RelPermalink }}">Previous</a>
+    {{ end }}
+    {{ with .Next }}
+        <a href="{{ .RelPermalink }}">Next</a>
+    {{ end }}
+</nav>
+{{ end }}

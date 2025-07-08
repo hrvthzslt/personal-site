@@ -1,0 +1,15 @@
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Resume'
+    pageRef = '/resume'
+    weight = 20
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'
