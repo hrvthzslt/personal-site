@@ -7,3 +7,12 @@
     {{- end }}
   {{- end }}
 {{- end }}
+{{- with resources.Get "css/sakura-dark.css" }}
+  {{- if hugo.IsDevelopment }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" media="screen and (prefers-color-scheme: dark)">
+  {{- else }}
+    {{- with . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" media="screen and (prefers-color-scheme: dark)" crossorigin="anonymous">
+    {{- end }}
+  {{- end }}
+{{- end }}
