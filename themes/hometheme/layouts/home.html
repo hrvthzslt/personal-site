@@ -3,6 +3,7 @@
   {{ $paginator := .Paginate (where site.RegularPages "Section" "posts") 8 }}
   {{ range $paginator.Pages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    <i><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></i>
     {{ .Summary }}
   {{ end }}
 
