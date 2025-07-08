@@ -9,21 +9,7 @@ If you want to know it about more this [post](https://zsolthorvath.xyz/posts/mak
 ## Setup for development
 
 ```shell
-make start
-```
-
-Or you can do the steps manually:
-
-Initialize submodule for the _beautifulhugo_ theme
-
-```shell
-git submodule update --init --recursive
-```
-
-Start hugo server for development
-
-```shell
-docker compose up -d
+make build start
 ```
 
 ## Stop development container
@@ -32,10 +18,10 @@ docker compose up -d
 make stop
 ```
 
-## Observe logs
+## Start interactive shell in the container
 
 ```shell
-make log
+make shell
 ```
 
 ## Create new post
