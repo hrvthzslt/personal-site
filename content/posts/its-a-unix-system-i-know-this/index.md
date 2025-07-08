@@ -10,4 +10,4 @@ Recently, I had the pleasure of giving a presentation about UNIX-like operating 
 
 In the end, I wouldn't say that I'm fully satisfied with the arrangement of the presentation, but I would like to share it nonetheless.
 
-Please check it out [here](https://github.com/hrvthzslt/its-a-unix-system) if you're interested. The presentation can be played with **slides**, and you can try everything out in a dedicated **container** that is mentioned.
+Please check it out **[here](https://github.com/hrvthzslt/its-a-unix-system)** if you're interested. The presentation can be played with **slides**, and you can try everything out in a dedicated **container** that is mentioned.
