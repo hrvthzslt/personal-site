@@ -1,0 +1,50 @@
+:root {
+  /* Zenbones Light (nvim) theme mapping */
+  --bg: #F0EDEC;
+  --accent-bg: #E9E4E2;
+  --text: #2C363C;
+  --text-light: #948985;
+  --border: #A4968F;
+  --accent: #286486;
+  --accent-hover: #6099C0;
+  --accent-text: var(--bg);
+  --code: #B279A7;
+  --preformatted: #E6C5BD;
+  --marked: #803D1C;
+  --disabled: #CFC1BA;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    /* Zenbones Dark (nvim) theme mapping */
+    --bg: #1C1917;
+    --accent-bg: #25211F;
+    --text: #B4BDC3;
+    --text-light: #6E6763;
+    --border: #494341;
+    --accent: #6099C0;
+    --accent-hover: #61ABDA;
+    --accent-text: var(--bg);
+    --code: #B279A7;
+    --preformatted: #55392C;
+    --marked: #B77E64;
+    --disabled: #403833;
+  }
+  /* Add a bit of transparency so light media isn't so glaring in dark mode */
+  img,
+  video {
+    opacity: 0.9;
+  }
+}
+
+a,
+a:visited {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: none;
+}
