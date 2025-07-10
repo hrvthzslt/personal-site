@@ -1,5 +1,5 @@
 ---
-title: "Birth of a Minimalistic Cli Development Environment - Part II"
+title: "Birth of a Minimalistic CLI Development Environment - Part II"
 date: 2025-04-05T14:58:04Z
 draft: false
 ---
