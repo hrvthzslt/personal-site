@@ -76,7 +76,6 @@ Honestly, I don't think this is bad at all, but I have a soft spot for classless
 
 There are three classless **CSS** "things" (I don't want to call them frameworks) that I really like, and it's not a trade secret: [Pico](https://picocss.com/), [Simple.css](https://simplecss.org/), and [Sakura](https://oxal.org/projects/sakura/).
 
-The first one is really well-rounded, but I liked the second one more, and the third is the most elegant. So I used the second one with the colors of the third.
+The first one is really well-rounded, but I liked the second one more, and the third is the most elegant. So I used the second one with the colors of the third. I hope you were able to follow.
 
-I hope you were able to follow.
-
+**The (theme) rebuild is done, witness the glory!**
