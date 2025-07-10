@@ -16,3 +16,6 @@ start: stop # Start the dev container
 
 shell: # Start interactive shell in the dev container
 	docker exec -it $(IMAGE_NAME)-container /bin/bash
+
+create-post: # Create a new post with the container
+	./scripts/create-post
