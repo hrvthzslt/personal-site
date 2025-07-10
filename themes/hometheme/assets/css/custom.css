@@ -1,36 +1,21 @@
 :root {
-  /* Zenbones Light (nvim) theme mapping */
-  /* --bg: #F0EDEC; */
-  --bg: #f7f5f5;
-  --accent-bg: #F0EDEC;
-  --text: #2C363C;
-  --text-light: #948985;
-  --border: #A4968F;
-  --accent: #286486;
-  --accent-hover: #6099C0;
-  --accent-text: var(--bg);
-  --code: #B279A7;
-  --preformatted: #E6C5BD;
-  --marked: #803D1C;
-  --disabled: #CFC1BA;
+  --bg: #f9f9f9;
+  --accent-bg: #f1f1f1;
+  --text: #4a4a4a;
+  --text-light: #144f5a;
+  --accent: #1d7484;
+  --accent-hover: #982c61;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    /* Zenbones Dark (nvim) theme mapping */
-    --bg: #1C1917;
-    --accent-bg: #25211F;
-    --text: #B4BDC3;
-    --text-light: #6E6763;
-    --border: #494341;
-    --accent: #6099C0;
-    --accent-hover: #61ABDA;
-    --accent-text: var(--bg);
-    --code: #B279A7;
-    --preformatted: #55392C;
-    --marked: #B77E64;
-    --disabled: #403833;
+    --bg: #222222;
+    --accent-bg: #4a4a4a;
+    --text: #c9c9c9;
+    --text-light: #dedce5;
+    --accent: #ffffff;
+    --accent-hover: #c9c9c9;
   }
   /* Add a bit of transparency so light media isn't so glaring in dark mode */
   img,
