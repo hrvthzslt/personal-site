@@ -1,0 +1,15 @@
+#!/bin/sh
+
+create_post() {
+  title=$(echo "$@" | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
+  docker exec --user $(id -u):$(id -g) -t homepage-dev-container hugo new posts/"$title"/index.md
+}
+
+main() {
+  echo "Please enter the title of the post"
+  read -r title
+  create_post "$title"
+  exit 0
+}
+
+main
