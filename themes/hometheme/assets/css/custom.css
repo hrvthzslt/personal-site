@@ -1,7 +1,8 @@
 :root {
   /* Zenbones Light (nvim) theme mapping */
-  --bg: #F0EDEC;
-  --accent-bg: #E9E4E2;
+  /* --bg: #F0EDEC; */
+  --bg: #f7f5f5;
+  --accent-bg: #F0EDEC;
   --text: #2C363C;
   --text-light: #948985;
   --border: #A4968F;
