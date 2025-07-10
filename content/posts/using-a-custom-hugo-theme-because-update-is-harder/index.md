@@ -1,6 +1,6 @@
 +++
 date = '2025-07-10T14:28:56Z'
-draft = true
+draft = false
 title = 'Using a Custom Hugo Theme Because Update Is Harder'
 +++
 
