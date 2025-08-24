@@ -20,7 +20,7 @@ I had to say a tearful goodbye to `ctags`, I found a version what would run in 3
 
 Another integral tool of that config is `grep`, accidentally I found a version of `grep` that is shipped with Turbo C++, but at the and I did not bother and just used the `vimgrep` command.
 
-**Picture of vim in DOSBox**
+![Vim in DOS](vim-in-dos.png)
 
 ## Choosing a Programming Language
 
@@ -29,6 +29,8 @@ I had an editor, but only some batch files to edit, so I needed a programming la
 I will return to **Turbo Pascal**, because I want to rebuild my first ever program, but that is a story for another time.
 
 All these languages are coming with their own IDE, they are really easy to use, with great built in features, like automatic formatting and step debugging.
+
+![Quick Basic IDE](qbasic-ide.png)
 
 I checked **DJGPP** as well, which is a port of **GCC** to **DOS**, which would be a great fit for Vim. I did not manage to get that working, but I may return to that as well.
 
@@ -45,7 +47,7 @@ This means `basic` files (Quick Basic) can be run with `<leader>r` (which is `\r
 
 This is a great implementation of the _edit-compile-run_ cycle (without compile really), the only workflow that you will need after the apocalypse.
 
-**Pictore of vim with a basic file and Quick Basic running**
+![Quick Basic FizzBuzz in Vim](vim-qbasic.png)
 
 ## Writing FizzBuzz in Quick Basic
 
@@ -100,4 +102,4 @@ END
 
 Thank you for following yet another adventurous tale of computers, I hope you enjoyed it as much as I did.
 
-**Farewell image**
+![Farewell](farewell.png)
