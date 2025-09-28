@@ -58,7 +58,9 @@ I also had to move the old volumes to the new place. Moving multiple hundreds of
 And of course, a party is not a party without a **Makefile**, so I collected the commonly used commands into one. In this example, the **start** target can run with or without the **profile** argument: `make start` or `make start profile=media`, so only the desired services will start.
 
 ```shell
-ifeq ($(DC_EXITS),0)
+DC_EXISTS := $(shell docker compose > /dev/null 2>&1 ; echo $$?)
+
+ifeq ($(DC_EXISTS),0)
     DOCKER_COMPOSE = docker compose
 else
     DOCKER_COMPOSE = docker-compose
