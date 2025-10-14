@@ -51,4 +51,4 @@ This way `startx` can be run without any arguments to start `dwm`, or with an ar
 
 This is a really simple way to run different Window Managers in different tty's if I want to experiment with them.
 
-Thank you for reading this quickie; don't prepare for longer content!
+Thank you for reading this quickie, don't prepare for longer content!

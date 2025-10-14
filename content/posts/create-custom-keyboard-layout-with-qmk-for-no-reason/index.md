@@ -8,11 +8,11 @@ I was a really happy user of a Keychron Q11 when I decided I wanted to try the Q
 
 <!--more-->
 
-If you're a good observer, the title says there was no good reason to compile QMK, but I was talking about some problem. Don't be confused; this whole thing could have been handled without compiling QMK.
+If you're a good observer, the title says there was no good reason to compile QMK, but I was talking about some problem. Don't be confused, this whole thing could have been handled without compiling QMK.
 
 ## Peaceful Times
 
-Not so long ago, I wrote about my custom [layout](/posts/making-a-better-keyboard-layout) that was applied with software in the OS itself. I happen to have mechanical keyboards that can be programmed themselves. You saw big words here like **QMK** and **VIA**; let's clear them up.
+Not so long ago, I wrote about my custom [layout](/posts/making-a-better-keyboard-layout) that was applied with software in the OS itself. I happen to have mechanical keyboards that can be programmed themselves. You saw big words here like **QMK** and **VIA**. Let's clear them up!
 
 - **QMK** is a keyboard firmware that controls key mapping, lighting, and other features of a keyboard.
 - **VIA** is a software that allows you to configure your keyboard in a graphical interface without flashing it.

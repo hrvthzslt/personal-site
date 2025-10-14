@@ -15,7 +15,7 @@ One thing led to another, and I ended up buying 5 books which I will talk about 
 
 ## Pascal
 
-I started to learn programming in the 2000s. I learned C# and Java, but my first language was Pascal. I used it for 2 years in computer science faculty once every two weeks. I recall building a graphical calculator with it; it took me about two months because, at the time, I only programmed in the school. Playing punk music had a much higher priority than experiencing the wonderful world of Pascal.
+I started to learn programming in the 2000s. I learned C# and Java, but my first language was Pascal. I used it for 2 years in computer science faculty once every two weeks. I recall building a graphical calculator with it, it took me about two months because, at the time, I only programmed in the school. Playing punk music had a much higher priority than experiencing the wonderful world of Pascal.
 
 ### György Pongor: Standardized Pascal: Programming and algorithms - 1993
 

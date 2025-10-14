@@ -22,7 +22,7 @@ I had some ideas to create a model for specific use cases. First, I wanted a cha
 
 So I reached for the thing that I like to do with every new model I try: ask it to answer in rhymes.
 
-**Ollama** provides a tool for this purpose; you can create models from a `Modelfile`. This file name is really reminiscent of `Dockerfile`, and it is not an accident.
+**Ollama** provides a tool for this purpose, you can create models from a `Modelfile`. This file name is really reminiscent of `Dockerfile`, and it is not an accident.
 
 The `Modelfile` I created currently looks like this:
 

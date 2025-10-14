@@ -42,17 +42,17 @@ I chose to use **Dosbox Staging** because **Dosbox**, as far as I can tell, is n
 
 **Staging** has another really good feature: it has CRT filters that don't look like your dog's vomit. They are really great, and I'm happy because I don't have a CRT display.
 
-Another reason I chose **Dosbox Staging** is that this fork seemed the best for spending my time **in** DOS. You see, **Dosbox** can be used as an environment for running old programs and games; you don't need to use the DOS CLI. But that would go against the experience I aimed to achieve.
+Another reason I chose **Dosbox Staging** is that this fork seemed the best for spending my time **in** DOS. You see, **Dosbox** can be used as an environment for running old programs and games, you don't need to use the DOS CLI. But that would go against the experience I aimed to achieve.
 
-If you want to use **Dosbox**, you're lucky; every distro and its grandmothers have it in their package repository. **Dosbox Staging** is another beast; the best way to use it is to download it and add the binary to your path.
+If you want to use **Dosbox**, you're lucky, every distro and its grandmothers have it in their package repository. **Dosbox Staging** is another beast, the best way to use it is to download it and add the binary to your path.
 
-So the time has come (again) to get **Ansible** out of my pocket and start the automation. I created a role that downloads and unzips **Staging** to `/opt`, then creates a symlink in `/usr/local/bin` pointing to the binary. If you think I chose the wrong folders, there is no need for a fistfight; please write a passionate letter about it, and we will keep it in the refrigerator.
+So the time has come (again) to get **Ansible** out of my pocket and start the automation. I created a role that downloads and unzips **Staging** to `/opt`, then creates a symlink in `/usr/local/bin` pointing to the binary. If you think I chose the wrong folders, there is no need for a fistfight, please write a passionate letter about it, and we will keep it in the refrigerator.
 
 For my efforts I got this:
 
 ![Dosbox first start](dosbox-first.png)
 
-No need to panic; it only needs a little configuration.
+No need to panic, it only needs a little configuration.
 
 ## Dosbox configuration
 
@@ -71,7 +71,7 @@ c:
 
 This is a batch script that mounts the `C:` drive and changes to it. The `@echo off` is there to suppress the output of the commands. The `mount` command is used to mount a directory as a drive, in this case the `C:` drive. The `c:` command changes to the `C:` drive.
 
-The `mount` command is specific to **Dosbox**; it's not a DOS command, and its second argument is a Unix path. This can look confusing at first, but these built-in commands make handling emulation very easy.
+The `mount` command is specific to **Dosbox**, it's not a DOS command, and its second argument is a Unix path. This can look confusing at first, but these built-in commands make handling emulation very easy.
 
 ## The C: drive
 
@@ -84,7 +84,7 @@ The main directories will look like this:
 └── PROGS
 ```
 
-This folder holds all the programs I want to run. For example, I wanted to use **Dos Navigator** (for that **Norton Commander** feel); all I needed to do was download the program and put it in this folder. That sounds like a good job for **Ansible**.
+This folder holds all the programs I want to run. For example, I wanted to use **Dos Navigator** (for that **Norton Commander** feel), all I needed to do was download the program and put it in this folder. That sounds like a good job for **Ansible**.
 
 The following programs are in this folder:
 
@@ -100,7 +100,7 @@ Really, writing **batch scripts** that don't even support conditions with **Vim*
 
 ### BIN
 
-Programs that I copied into the mounted drive in the `C:\PROGS` path are not available as commands. There is a `PATH` environment variable; I added the `C:\BIN` folder (sorry _directory_, you dork) to it in the autoexec config block.
+Programs that I copied into the mounted drive in the `C:\PROGS` path are not available as commands. There is a `PATH` environment variable, I added the `C:\BIN` folder (sorry _directory_, you dork) to it in the autoexec config block.
 
 ```dosbatch
 set PATH=%PATH%;C:\BIN

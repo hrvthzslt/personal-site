@@ -25,7 +25,7 @@ It's a simple Dockerfile that installs Lunarvim and its essential and optional d
 FROM alpine:3.17.3
 ```
 
-The base is Alpine; it is lightweight and has somewhat fresh packages, which makes the remaining steps of this Dockerfile very comfortable.
+The base is Alpine, it is lightweight and has somewhat fresh packages, which makes the remaining steps of this Dockerfile very comfortable.
 
 ```dockerfile
 RUN apk add bash curl git lazygit \
@@ -52,7 +52,7 @@ I copied the base configuration to the git repo, and it will be copied when the 
 
 I just need to build and run this image, and I can use Lunarvim in a container. Building is as simple as: `docker build -t cunarvim .`. This command builds an image with the cunarvim tag.
 
-The next step is to run it with `docker run -it --rm -v $(pwd):/project cunarvim`. This command is a bit more interesting; it runs the container and attaches the working directory as a volume. This way, I can edit files in the container. I would also add an alias to my `.bashrc` or `.zshrc` file:
+The next step is to run it with `docker run -it --rm -v $(pwd):/project cunarvim`. This command is a bit more interesting, it runs the container and attaches the working directory as a volume. This way, I can edit files in the container. I would also add an alias to my `.bashrc` or `.zshrc` file:
 
 ```bash
 alias cvim='docker run -it --rm -v $(pwd):/project cunarvim'

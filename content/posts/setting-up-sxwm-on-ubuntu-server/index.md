@@ -12,7 +12,7 @@ Instead of the usual rambling, I'll make a guide for something that I find reall
 
 ## Preparing Ubuntu
 
-If you expected that I would guide you through the installation, you will be disappointed. Download the server ISO, install it on a machine or a VM—I will use the latter. Finish the installation, and do not install any additional packages that could be handy for a server; we won't need them. Do an `update` and `upgrade`, and you should see something like this when you find out who and where you are:
+If you expected that I would guide you through the installation, you will be disappointed. Download the server ISO, install it on a machine or a VM—I will use the latter. Finish the installation, and do not install any additional packages that could be handy for a server, we won't need them. Do an `update` and `upgrade`, and you should see something like this when you find out who and where you are:
 
 ![After Install](after-install.png)
 
@@ -20,7 +20,7 @@ Yes, my user is `me`, because me is me. Makes sense.
 
 Without starting any religious war, we will remove `snap`. There are a couple of reasons: I don't like it, we don't need it, and I don't like it. I'm not against **universal package managers**, but for me, snap does not feel so snappy. If you like it, don't dismiss it.
 
-Luckily, in **Ubuntu Server** this is very easy—it will bite back, but that is part of the fun. You can check how many snap packages you have with: `snap list`. If you did not install any extra packages, this should be zero, which is great; snap can be removed. We will remove it and hold it back:
+Luckily, in **Ubuntu Server** this is very easy—it will bite back, but that is part of the fun. You can check how many snap packages you have with: `snap list`. If you did not install any extra packages, this should be zero, which is great, snap can be removed. We will remove it and hold it back:
 
 ```shell
 sudo apt remove --purge snapd
@@ -33,7 +33,7 @@ No snappy snap snaps after this.
 
 ## Display Server
 
-We will install **X11**, also known as the **X Window System**, which is a protocol and system that provides the basic framework for a graphical user interface for Unix-like operating systems. It is important to state that **Wayland** is another protocol, and most desktop environments are migrating to that. Both have their ups and downs; choosing **X11** is not a statement, it's just the dependency of the window manager we will use.
+We will install **X11**, also known as the **X Window System**, which is a protocol and system that provides the basic framework for a graphical user interface for Unix-like operating systems. It is important to state that **Wayland** is another protocol, and most desktop environments are migrating to that. Both have their ups and downs, choosing **X11** is not a statement, it's just the dependency of the window manager we will use.
 
 The easiest way to install it is to install **xinit**. Maybe you can guess what that is by the name, but from Wikipedia:
 
@@ -71,7 +71,7 @@ Thank you for your attention. But jokes aside, we're looking for the build depen
 sudo apt install gcc libx11-dev libxinerama-dev
 ```
 
-The build steps are `make` and `sudo make install`; it will first build and then copy the binary to `/usr/local/bin`. But something happens when we try to run `make`.
+The build steps are `make` and `sudo make install`, it will first build and then copy the binary to `/usr/local/bin`. But something happens when we try to run `make`.
 
 ![Missing XCursor](missing-xcursor.png)
 
@@ -91,7 +91,7 @@ Add the following line to `.xinitrc`:
 exec sxwm
 ```
 
-Run the command `startx`, and congratulations—you see a black screen. I will spare your time; you can exit with `Super+Shift+e`.
+Run the command `startx`, and congratulations—you see a black screen. I will spare your time, you can exit with `Super+Shift+e`.
 
 By default, this window manager has some bindings to suckless tools. We can install them just for trying it out.
 
@@ -99,7 +99,7 @@ By default, this window manager has some bindings to suckless tools. We can inst
 sudo apt install suckless-tools stterm
 ```
 
-To get a terminal, press `Super+Enter`; to show a runner, `Super+p`.
+To get a terminal, press `Super+Enter`, to show a runner, `Super+p`.
 
 ![Sxwm First](sxwm-first.png)
 
@@ -134,7 +134,7 @@ sudo add-apt-repository ppa:mozillateam/ppa
 sudo apt install firefox-esr
 ```
 
-The configuration of **sxwm** will happen in the following file: `$HOME/.config/sxwmrc`. The default config can be found in the git repository; it's `default_sxrc`.
+The configuration of **sxwm** will happen in the following file: `$HOME/.config/sxwmrc`. The default config can be found in the git repository, it's `default_sxrc`.
 
 Let's change what applications are launched with the keybindings:
 

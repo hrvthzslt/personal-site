@@ -14,7 +14,7 @@ This will be the simplest part. I use **tmux** for screen management. But to be 
 
 The configuration changes are not the most exciting ones. Like **vim** has a leader key, **tmux** has a prefix key. I set it to `Ctrl + a` because it has some **GNU Screen** vibes and is much more comfortable than the default: `Ctrl + b`. _(**B** should be pressed by the left hand, and my Ctrl is in an unconventional place, so that is not great.)_
 
-I change **window** and **pane** indexes to start from one; it just makes much more sense to me. By the way, I think there is no way to set the session index to start from one, and that makes me quite sad. Send help.
+I change **window** and **pane** indexes to start from one, it just makes much more sense to me. By the way, I think there is no way to set the session index to start from one, and that makes me quite sad. Send help.
 
 Also, I set up some bindings for more vi-like navigation, moving between panes with _hjkl_ and switching mode keys to vi-like as well.
 
@@ -105,7 +105,7 @@ main "$1"
 
 There are some printing methods that come from the `internal` script, and they are used to print messages. The `is_debian` function checks if the system is a **Debian** based one, and if so, it installs **vim** with `apt`. _(Maybe it should be called `is_apt`, sue me.)_
 
-And your eyes are not deceiving you; there is a call for the `main` function, but you don't see the definition. That is because it's defined in the `internal` script. For a clear picture, `main` looks like this and will be the entry point of all scripts, so they can be called like: `./vim install`
+And your eyes are not deceiving you, there is a call for the `main` function, but you don't see the definition. That is because it's defined in the `internal` script. For a clear picture, `main` looks like this and will be the entry point of all scripts, so they can be called like: `./vim install`
 
 ```shell
 main() {
@@ -150,7 +150,7 @@ tmux-link:
     @./tmux link
 ```
 
-At the bottom, there are the script calls with install and link arguments, organized one by one in different **targets**. This makes calling them from other targets very easy. There are three collector targets: one for every install, one for every link, and one for **EVERYTHING**! _(And this is something I use in reality; there are systems where I don't want to install, just use my configurations.)_
+At the bottom, there are the script calls with install and link arguments, organized one by one in different **targets**. This makes calling them from other targets very easy. There are three collector targets: one for every install, one for every link, and one for **EVERYTHING**! _(And this is something I use in reality, there are systems where I don't want to install, just use my configurations.)_
 
 ### What I don't do
 

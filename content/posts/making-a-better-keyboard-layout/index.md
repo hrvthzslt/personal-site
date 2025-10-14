@@ -27,7 +27,7 @@ The second one was **kmonad**, which is configured with Haskell. _(Yes, that is 
 
 The winner was **[keyd](https://github.com/rvaiya/keyd)**, which is a daemon that listens to keyboard events and can be configured with a simple configuration file. You clone the repository, build it, and add it to systemd like a real computer user.
 
-_If you think I should not use **systemd**, there is no need for a fistfight; please write a passionate letter about it, and we will keep it in the refrigerator for posterity._
+_If you think I should not use **systemd**, there is no need for a fistfight, please write a passionate letter about it, and we will keep it in the refrigerator for posterity._
 
 ## This Caps Lock goes to heaven
 
@@ -53,7 +53,7 @@ So I met another concept which is provided by **keyd** as well: **layers**.
 
 No **qmk** and **expensive keyboard** jokes this time...
 
-You already use layers in your keyboard; for example, when you press **Shift**, you are in a different layer. I just created another. When I hold **Tab**, it activates the navigation layer.
+You already use layers in your keyboard, for example, when you press **Shift**, you are in a different layer. I just created another. When I hold **Tab**, it activates the navigation layer.
 
 The configuration is the following:
 
@@ -80,7 +80,7 @@ m = home
 / = end
 ```
 
-Yes, you're right; that beautiful **overload** method works with layers as well.
+Yes, you're right, that beautiful **overload** method works with layers as well.
 
 I am really not in the mood to spell out this configuration, so I made a nice drawing for you:
 
@@ -90,4 +90,4 @@ To make this comfortable, I used keys from the right side, since **Tab** is on t
 
 This whole mapping has one added benefit I like: it works with the laptop keyboard as well.
 
-So check out **[keyd](https://github.com/rvaiya/keyd)**; it's a really cool program. I'm really happy with it.
+So check out **[keyd](https://github.com/rvaiya/keyd)**, it's a really cool program. I'm really happy with it.

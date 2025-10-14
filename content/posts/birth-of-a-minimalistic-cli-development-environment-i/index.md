@@ -60,7 +60,7 @@ Without the help of **LSP**, navigation can be done with the built-in `tags` fun
 ctags -R .
 ```
 
-There is a **go to definition** functionality in vim already, but it works within a file by default. I created a method that jumps to a tag if there is one; otherwise, the original behavior applies.
+There is a **go to definition** functionality in vim already, but it works within a file by default. I created a method that jumps to a tag if there is one, otherwise, the original behavior applies.
 
 ```vim
 function! GoToTagOrDefinition()

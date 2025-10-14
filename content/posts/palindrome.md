@@ -26,7 +26,7 @@ class Solution
 }
 ```
 
-The second solution was really similar, but it does not matter. This is how I would do it on a Monday. In a sense, this solution is not about solving the problem but producing the correct output with the correct built-in functions. It is correct; it is how I would do it again... but maybe I should have gone deeper.
+The second solution was really similar, but it does not matter. This is how I would do it on a Monday. In a sense, this solution is not about solving the problem but producing the correct output with the correct built-in functions. It is correct, it is how I would do it again... but maybe I should have gone deeper.
 
 ## Have to go deeper
 
@@ -126,7 +126,7 @@ function strrev(string $text): string
 
 ## Mooore deeper
 
-There is one more function I could implement, and I don't want to leave it hanging. One way to implement the `strtolower` function is to walk through the character chain, and if the letter is uppercase, do a little dance in the ASCII table like this: `chr(ord('A') + 32)`. I did not do that; I wanted a more crude solution that makes more use of the `CharacterChain`. At least either of the solutions supports accented letters...
+There is one more function I could implement, and I don't want to leave it hanging. One way to implement the `strtolower` function is to walk through the character chain, and if the letter is uppercase, do a little dance in the ASCII table like this: `chr(ord('A') + 32)`. I did not do that. I wanted a more crude solution that makes more use of the `CharacterChain`. At least either of the solutions supports accented letters...
 
 ```php
 function strtolower(string $text): string

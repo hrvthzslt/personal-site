@@ -8,7 +8,7 @@ Last year, I had a "beautiful" experience programming my own [**QMK** layout for
 
 <!--more-->
 
-I started this overly dramatically, but there was one thing that I missed as a given feature. In **QMK**, there is a way to organize your keyboard and layout sources; this is called _userspace_. This means that you can have your own version under your user, which is conventionally a GitHub username.
+I started this overly dramatically, but there was one thing that I missed as a given feature. In **QMK**, there is a way to organize your keyboard and layout sources, this is called _userspace_. This means that you can have your own version under your user, which is conventionally a GitHub username.
 
 This is something that I did understand, so compiling my keymap happens with the following command:
 
@@ -22,7 +22,7 @@ This is nice, but the questionable part is how I created this _userspace_. You c
 
 This works technically, but it was causing one very annoying little warning. Since this symlink causes changes in the **QMK** sources, which is a git repository, every update yells at me with a `QMK is ready to go, but minor problems were found` message. Yuck! ...And overall, it feels like a hacky solution among hacks.
 
-When I was checking out the documentation, I found out that everything I tried to do is already available as a feature. I don't have to fork the whole firmware repository; I can create an external _userspace_ repository.
+When I was checking out the documentation, I found out that everything I tried to do is already available as a feature. I don't have to fork the whole firmware repository, I can create an external _userspace_ repository.
 
 Credit to me: because of the symlinking method, I had already structured the files as needed, so my _userspace_-wide changes and custom _layouts_ were in the right place. The repository needed a `qmk.json` file, which contains information that helps the repository to be recognized as a _userspace_.
 

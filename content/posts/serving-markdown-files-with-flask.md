@@ -32,7 +32,7 @@ There are some things that I want to write about but do not have to be in the ma
 
 ## Python environments confuse me
 
-Well, that's not true; I really like the concept of virtual environments. If you want to understand the concept, print your `PATH` environmental variable before and after activating a virtual environment. You will see that the **beginning** of your path list changed.
+Well, that's not true, I really like the concept of virtual environments. If you want to understand the concept, print your `PATH` environmental variable before and after activating a virtual environment. You will see that the **beginning** of your path list changed.
 
 But what is confusing about this topic?
 
@@ -54,7 +54,7 @@ This way, the local and the container environment are the same. I can use the sa
 
 But there is one **big** problem. Python itself.
 
-Currently, my local Python is 3.11, and I used 3.11 in the container as well. But this will break in the future. When this becomes a real problem, I will use **conda** locally because it can manage different Python versions. If you use Python and you do not know **conda**, you should [check it out](https://conda.io/projects/conda/en/latest/user-guide/install/index.html); it's rad.
+Currently, my local Python is 3.11, and I used 3.11 in the container as well. But this will break in the future. When this becomes a real problem, I will use **conda** locally because it can manage different Python versions. If you use Python and you do not know **conda**, you should [check it out](https://conda.io/projects/conda/en/latest/user-guide/install/index.html), it's rad.
 
 ## Structuring Flask
 
@@ -82,7 +82,7 @@ I could not resist myself and created a `src` and a `test` folder.
     └── test_load_file.py
 ```
 
-Blueprint holds one blueprint, which is the meat of the application. It is not necessary; in this case, I have only one, but I really like how blueprints organize Flask's building blocks. I like nice things; sue me.
+Blueprint holds one blueprint, which is the meat of the application. It is not necessary, in this case, I have only one, but I really like how blueprints organize Flask's building blocks. I like nice things, sue me.
 
 I created modules for **action**, **domain**, and **responder**, and defined the routes in the **blueprint** module.
 If you're unfamiliar with this pattern, I could explain it, or I could say: `request -> action -> domain -> action -> responder -> response`. This is possibly the worst explanation ever, but I hope you get the idea.
@@ -93,7 +93,7 @@ I'm sure you know what **test** is for, and you write a lot. I'm sure you do. Go
 
 ## Code quality
 
-For formatting, I use `black`; for linting, I use `ruff`; and for testing, I use `unittest`. All of these can be run in the container, so I use them for a nice little GitHub action.
+For formatting, I use `black`, for linting, I use `ruff`, and for testing, I use `unittest`. All of these can be run in the container, so I use them for a nice little GitHub action.
 
 I usually create a `Makefile` for these tasks. I really like to create small targets and chain them together.
 

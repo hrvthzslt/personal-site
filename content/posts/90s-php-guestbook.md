@@ -27,7 +27,7 @@ The script itself has to be readable, executable and writable by the webserver. 
 
 ### Redirect
 
-The script has to do a redirect after the form is submitted; otherwise, the change won't be visible. If the script includes the entries from another file, there would be no need for a redirect.
+The script has to do a redirect after the form is submitted, otherwise, the change won't be visible. If the script includes the entries from another file, there would be no need for a redirect.
 
 ### Inserting the guestbook entries
 

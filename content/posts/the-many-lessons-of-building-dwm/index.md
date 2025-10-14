@@ -10,25 +10,25 @@ The horrifying and uplifting tale of trying out window managers, hunting for pac
 
 ## Hard can be easier
 
-I use Gnome with a POP Shell plugin for tiling functionality. That is a setup that I really like; I would even be alright with base Gnome if I had to. All that said, I wanted to try a tiling window manager because it's not enough to use a computer; we have to **experience** it.
+I use Gnome with a POP Shell plugin for tiling functionality. That is a setup that I really like, I would even be alright with base Gnome if I had to. All that said, I wanted to try a tiling window manager because it's not enough to use a computer, we have to **experience** it.
 
 **i3** was my first choice. It scared me, and I ran away. To be honest, it would be a really good first choice, but it's late.
 
 **AwesomeWM** was my second choice, but it has a very long configuration, and I have very short patience.
 
-So I spent months setting up **dwm**. Of course, _(The net time can be counted in days, but that is not enough drama!)_. Still, there is a benefit to forced slow progression; it makes it easier to understand the steps.
+So I spent months setting up **dwm**. Of course, _(The net time can be counted in days, but that is not enough drama!)_. Still, there is a benefit to forced slow progression, it makes it easier to understand the steps.
 
-**dwm** is not just another software; it's a **suckless** software. This means it is "simple, minimal, and usable," which are values that I value. And I have to confess, I really like the aesthetics of it.
+**dwm** is not just another software, it's a **suckless** software. This means it is "simple, minimal, and usable," which are values that I value. And I have to confess, I really like the aesthetics of it.
 
 There are some key differences between **dwm** and other tiling window managers.
 
-- There is no configuration file; you have to edit the source code and recompile it. Well, you could say the header file is _the_ configuration file, but you still have to recompile it.
+- There is no configuration file, you have to edit the source code and recompile it. Well, you could say the header file is _the_ configuration file, but you still have to recompile it.
 - Since you have to compile it, there is no reason to install it with a package manager.
 - You maintain your own version, catered to your own needs.
 
 ## Finding Missing Header Files
 
-To compile this glamorous (not really) software, you will need some header files; otherwise, you will get errors like `fatal error: X11/Xlib.h: No such file or directory`.
+To compile this glamorous (not really) software, you will need some header files, otherwise, you will get errors like `fatal error: X11/Xlib.h: No such file or directory`.
 
 You can find on the _interwebz_ which packages will contain the header files you need, but you can also find them by yourself.
 
@@ -79,7 +79,7 @@ In other words, by GPT the third,
 
 These tribulations had to be overcome by me, but since I own the source code, I can do whatever I want. And it's important to acknowledge that these problems would ail all tiling window managers.
 
-And I sinned as well; I built the autostarting and all the key combination functionality into my **dwm**. This is a very bad idea if you want to separate concerns and reuse functionality in other window managers. But honestly, I really like that it's bundled in one program. _(Since then this caused me problems so I moved most of the key mappings to sxhkd, and the autostart to a shell script)_
+And I sinned as well, I built the autostarting and all the key combination functionality into my **dwm**. This is a very bad idea if you want to separate concerns and reuse functionality in other window managers. But honestly, I really like that it's bundled in one program. _(Since then this caused me problems so I moved most of the key mappings to sxhkd, and the autostart to a shell script)_
 
 ## Conclusion
 

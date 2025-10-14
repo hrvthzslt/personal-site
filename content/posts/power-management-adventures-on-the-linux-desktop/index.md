@@ -48,7 +48,7 @@ Now, that’s decentralized as hell, so let’s visualize what happens when a ke
 
 ![Power management sequence](sequence.svg)
 
-So, while that may look like a lot, in practice I just added a new shell script, a new keybinding, and a new block for dwmblocks. Calling `power set` will open **dmenu** and set the profile; calling `power get` will echo an icon.
+So, while that may look like a lot, in practice I just added a new shell script, a new keybinding, and a new block for dwmblocks. Calling `power set` will open **dmenu** and set the profile, calling `power get` will echo an icon.
 
 ![Balance](balance.png)
 
