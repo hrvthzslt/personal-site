@@ -1,4 +1,4 @@
-FROM debian:trixie
+FROM ubuntu:noble
 
 RUN apt-get update && apt-get -y install wget
 
