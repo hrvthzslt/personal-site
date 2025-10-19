@@ -95,6 +95,8 @@ I did some side adventure with **Gateron Red Low Profile** switches. For me it's
 
 I certainly recommend this keyboard, it's feature-rich and chill as hell.
 
+![k11](k11.png)
+
 ## The E Word
 
 One more thing before we get to our tearful goodbyes! There is one word that did not come up yet: **Ergonomics!** All of these keyboards can offer enough ergonomic advantages, or those advantages can be questionable if they are not meeting your needs.
