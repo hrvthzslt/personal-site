@@ -1,7 +1,7 @@
 +++
 date = '2025-10-18T17:49:43Z'
 draft = false
-title = 'From Q11 to K11 - A Tale of Keyboards'
+title = 'From Q11 to K11'
 +++
 
 This is a chronicle of finding the chillest keyboard after a lot of trials. I tried out a good many things and ended up loving simplicity (well, relatively) and ease of use the most.
