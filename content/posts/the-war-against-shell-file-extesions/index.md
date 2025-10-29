@@ -10,7 +10,7 @@ I see what you did there, you created a file called `script.sh`. Why do you have
 
 ## Pedantic Explanation
 
-They don't matter. Executable files are recognized by the **executable file permission bit** (`x`) and, for compiled binaries, by the **ELF** header. Scripts use an **interpreter** defined in the **shebang** line (`#!`). There are a lot of terms here, and you have no way to know how much I truly understand them, so you might say: "It's just for providing context in the file name."
+Extensions don't matter. Executable files are recognized by the **executable file permission bit** (`x`) and, for compiled binaries, by the **ELF** header. Scripts use an **interpreter** defined in the **shebang** line (`#!`). There are a lot of terms here, and you have no way to know how much I truly understand them, so you might say: "It's just for providing context in the file name."
 
 But I have a more pedantic answer. Let's say you name your script `script.sh`, but the shebang is:
 
@@ -56,7 +56,7 @@ main "$1"
 Maybe I want it to be accessible throughout the whole system, so I symlink it to the appropriate path. Then I can run it just like any other command.
 
 ```bash
-$ sudo ln -sf "$PWD"/hshr /usr/bin/hshr
+$ sudo ln -sf "$PWD"/hshr /usr/local/bin/hshr
 $ hshr "example text"
 d9e989f651cdd269d7f9bb8a215d024d8d283688
 ```
@@ -83,7 +83,7 @@ I build it and create a symlink to the same place, and try it out again:
 
 ```bash
 $ gcc -o hshr hshr.c -lcrypto
-$ sudo ln -sf "$PWD"/hshr /usr/bin/hshr
+$ sudo ln -sf "$PWD"/hshr /usr/local/bin/hshr
 $ hshr "example text"
 d9e989f651cdd269d7f9bb8a215d024d8d283688
 ```

@@ -6,4 +6,9 @@
          alt="">
     LT HORVÁTH
 </h1>
+{{ if or (eq .Section "resume") (in .RelPermalink "/resume") }}
+    <i>Resume</i>
+{{ else }}
+    <i>Tales of Computering™</i>
+{{ end }}
 {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
