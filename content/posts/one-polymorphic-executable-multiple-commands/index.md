@@ -4,7 +4,7 @@ draft = false
 title = 'One Polymorphic Executable, Multiple Commands'
 +++
 
-Let me present you a very interesting concept: shipping a single executable that will gift the system multiple commands. We are going to UNIX this topic very much!
+Let me present a very interesting concept: shipping a single executable that will give the system multiple commands. We are going to UNIX this topic very much!
 
 <!--more-->
 
@@ -23,7 +23,7 @@ The most sensible reaction after getting inspired, to create something like this
 
 How this is coming to fruition is very simple, and only needs two things.
 
-In the source code, we have to check, what is the name that the program was called with. In **C**, and in other languages as well, this means inspecting the zeroth argument. But that begs the question, how can one executable have multiple names, and of course with **symlinks**!
+In the source code, we have to check what name the program was called with. In **C**, and in other languages as well, this means inspecting the zeroth argument. But that begs the question, how can one executable have multiple names? Of course, with **symlinks**!
 
 In the case of **BusyBox**, the executable is called `busybox`, and there is symlink for every utility it provides.
 
@@ -46,9 +46,9 @@ batp -r
 memp -r
 ```
 
-This two command will yield the battery percentage and memory usage percentage, respectively, as a rounded number.
+These two commands will yield the battery percentage and memory usage percentage, respectively, as rounded numbers.
 
-The simplifed source of deciding which command to run is the following:
+The simplified source for deciding which command to run is the following:
 
 ```c
 int main(int argc, char *argv[])
@@ -70,10 +70,10 @@ int bus(char *command, Options options, int argc, char *argv[])
 }
 ```
 
-Yes, this is is a "command bus", you cannot stop me! And there is nothing in the world that a condition cannot solve.
+Yes, this is a "command bus", you cannot stop me! And there is nothing in the world that a condition cannot solve.
 
-You as a very perceptive reader may have noticed, that the commands used the same options. Since we have one source, option parsing is also unified. Since options are affecting printing out results, that is unified as well.
+As a very perceptive reader, you may have noticed that the commands use the same options. Since we have one source, option parsing is also unified. Because options affect how results are printed, that is unified as well.
 
-This was the most fun in recent time I had with my mini projects. For more explanation, you check my attempt at **C** programming: [SysPerc](https://github.com/hrvthzslt/sysperc).
+This was the most fun I have had with my mini projects in recent times. For more explanation, check my attempt at **C** programming: [SysPerc](https://github.com/hrvthzslt/sysperc).
 
 And as always, keep _computering™_!
