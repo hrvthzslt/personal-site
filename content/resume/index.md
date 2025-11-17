@@ -7,20 +7,19 @@ draft: false
 
 ## About
 
-I have been interested in coding since my young age and began learning web development later on.
-I have since transitioned into a professional career in backend development,
-starting as a junior full-stack developer and gaining experience with a range of technologies and
-programming languages. I am currently a backend developer with a focus on building robust and scalable applications.\
-I am constantly seeking to learn and improve my skills, and I am drawn to work environments where I can collaborate
-and learn from others. I am motivated by the opportunity to work towards well-defined goals and make meaningful
-contributions to the team.
+With a general love towards computers, I have been interested in coding since my young age and began learning web development later on.
+
+This love since transitioned into a professional career in backend development, starting as a junior full-stack developer and gaining experience with a range of technologies and programming languages, from maintaining and improving legacy monoliths to creating brand new projects from the ground up. I am currently a backend developer with a focus on building robust and scalable applications.
+
+I am constantly seeking opportunities to improve my skills, and I am drawn to work environments where I can collaborate and learn from others. I also like to share knowledge and play my part with presentations or workshops. I am motivated by the opportunity to work towards well-defined goals and make meaningful contributions.
 
 ## Career
 
 - 2024 - Present - **Staff Software Engineer** at [**Byborg Enterprises**](https://www.byborgenterprises.com/)
 
   - Planning and developing new features for a legacy streaming site and its services under heavy traffic with performance awareness using **Python, Flask, MySql, Redis, Elasticsearch, Kafka**, and **Docker**.
-  - Contributing to the introduction of new technologies.
+  - Integrating third-party **Recommendation** engine, while ensuring high availability.
+  - Contributing to the introduction of new technologies, setting up local environments for legacy projects with **Docker**.
 
 - 2023 - 2024 - **Software Developer** at [**Billingo**](https://www.billingo.hu/)
 
