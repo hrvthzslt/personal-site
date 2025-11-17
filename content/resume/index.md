@@ -1,15 +1,8 @@
----
-title: "Resume"
-subtitle: "Software Developer"
-date: 2022-12-27T16:40:32+01:00
-draft: false
----
-
 <!-- # Zsolt Horváth -->
 
-<!-- ![Zsolt Horváth](nice-picture.png) -->
+<!-- <img align="left" src="nice-picture.png" alt="Zsolt Horváth" style="zoom:75%;" /> -->
 
-<!-- [hrvth.7slt@gmail.com](mailto:hrvth.7slt@gmail.com) | [LinkedIn](https://www.linkedin.com/in/zsolt-horvath-8779147a/) | [GitHub](https://github.com/hrvthzslt) -->
+<!-- **Backend Software Developer ** | [GitHub](https://github.com/hrvthzslt) | [LinkedIn](https://www.linkedin.com/in/zsolt-horvath-8779147a/) | [hrvth.7slt@gmail.com](mailto:hrvth.7slt@gmail.com) -->
 
 With a genuine love for computers, I have been interested in coding since a young age and later began learning web development.
 
