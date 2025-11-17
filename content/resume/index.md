@@ -7,11 +7,11 @@ draft: false
 
 ## About
 
-With a general love towards computers, I have been interested in coding since my young age and began learning web development later on.
+With a genuine love for computers, I have been interested in coding since a young age and later began learning web development.
 
-This love since transitioned into a professional career in backend development, starting as a junior full-stack developer and gaining experience with a range of technologies and programming languages, from maintaining and improving legacy monoliths to creating brand new projects from the ground up. I am currently a backend developer with a focus on building robust and scalable applications.
+This love eventually led to a professional career in backend development, starting as a junior full-stack developer and expanding my experience with a wide range of technologies and programming languages. Over time, I have worked on projects ranging from maintaining and improving legacy monoliths to building brand new applications from the ground up. I am currently focused on backend development, creating robust and scalable systems, which are usually under severe stress.
 
-I am constantly seeking opportunities to improve my skills, and I am drawn to work environments where I can collaborate and learn from others. I also like to share knowledge and play my part with presentations or workshops. I am motivated by the opportunity to work towards well-defined goals and make meaningful contributions.
+I am always seeking opportunities to improve my skills and thrive in environments where I can collaborate and learn from others. I occasionally enjoy sharing knowledge through presentations and workshops, and I am motivated by the chance to work towards well-defined goals and make meaningful contributions that have real impact.
 
 ## Career
 
