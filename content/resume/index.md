@@ -6,14 +6,14 @@
 
 With a genuine love for computers, I have been interested in coding since a young age and later began learning web development.
 
-This love eventually led to a professional career in backend development, starting as a junior full-stack developer and expanding my experience with a wide range of technologies and programming languages. Over time, I have worked on projects ranging from maintaining and improving legacy monoliths to building brand new applications from the ground up. I am currently focused on backend development, creating robust and scalable systems, which are usually under severe stress.
+This love eventually led to a professional career in backend development, starting as a junior full-stack developer and expanding my experience with a wide range of technologies and programming languages. Over time, I have worked on projects ranging from maintaining and improving legacy monoliths to building brand new applications from the ground up. I am currently focused on backend development, creating robust and scalable solutions designed to handle high traffic.
 
 I am always seeking opportunities to improve my skills and thrive in environments where I can collaborate and learn from others. I occasionally enjoy sharing knowledge through presentations and workshops, and I am motivated by the chance to work towards well-defined goals and make meaningful contributions that have real impact.
 
 ## Career
 
 - 2024 - Present - **Staff Software Engineer** at [**Byborg Enterprises**](https://www.byborgenterprises.com/)
-  - Planning and developing new features for a legacy streaming site and its services under heavy traffic with performance awareness using **Python, Flask, MySql, Redis, Elasticsearch, Kafka**, and **Docker**.
+  - Planning and developing new features for a legacy streaming site and its services under heavy load with performance awareness using **Python, Flask, MySql, Redis, Elasticsearch, Kafka**, and **Docker**.
   - Integrating third-party **Recommendation** engine, while ensuring high availability.
   - Contributing to the introduction of new technologies, setting up local environments for legacy projects with **Docker**.
 
