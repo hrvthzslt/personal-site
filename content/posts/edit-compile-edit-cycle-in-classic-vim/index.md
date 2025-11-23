@@ -60,7 +60,7 @@ Ruff is being rough, the quickfix list is populated, and I am satisfied.
 
 ## External Formatting
 
-For text indentation, a single press of `=` is enough, but external utilities such as code formatters can be used as well. For formatting C code, the following command would do the job: `:!clang-format -i %`. As with any external command, the standard input is the content of the current buffer, and it will be overwritten with the standard output of the command, meaning the memory representation of the file will be updated, in our case, formatted.
+For text indentation, a single press of `=` is enough, but external utilities such as code formatters can be used as well. For formatting C code, the following command would do the job: `:!clang-format -i %`. As with any external command, the input is the content of the current buffer (or a part of it), and it will be overwritten with the output of the command, meaning the memory representation of the file will be updated, in our case, formatted.
 
 This poses one problem: since the whole buffer is being overwritten, the cursor position will be lost. That is very sad, flowers are dying. This situation can be solved with this function:
 
@@ -85,7 +85,7 @@ autocmd FileType python vnoremap <buffer> <leader>lf :call FormatWithCursor('ruf
 
 ## The Reason
 
-The original reason for the **"Minimalist CLI Development Environment"** was to create an environment with low footprint but tailored to my convenience. These functionalities has another reason for existing: distraction-free programming. After dipping my toes into C programming, I had to realize that I need to go back and spend some quality time learning. So I pick up this setup, a book, and a coffee, and do some _computering™_.
+The original reason for the **"Minimalist CLI Development Environment"** was to create an environment with low footprint but tailored to my convenience. These functionalities have another reason for existing: distraction-free programming. After dipping my toes into C programming, I had to realize that I need to go back and spend some quality time learning. So I pick up this setup, a book, and a coffee, and do some _computering™_.
 
 ![Book and Thinkpad](book-and-thinkpad.png)
 
