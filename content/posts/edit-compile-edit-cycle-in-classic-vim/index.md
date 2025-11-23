@@ -22,13 +22,13 @@ I have an answer to this: You are not an IDE, you're just a text editor! And I h
 
 ![C with stock Vim](c-with-stock-vim.png)
 
-Well, yes, these are missing semicolons, but that is not the point. The point is that without any configuration or plugin, compilation can be started from Vim, and issues can be jumped to and fixed. This works automatically with C, for example, so I will deduce (without doing any investigation) that Vim was indeed mostly written with Vim, facilitating the edit-compile-edit cycle.
+Well, yes, these are missing semicolons, but that is not the point. The point is that without any configuration or plugin, compilation can be started from Vim, and issues can be jumped to and fixed. This works automatically with C, so I will deduce (without doing any investigation) that Vim was indeed mostly written with Vim, facilitating the edit-compile-edit cycle.
 
-Does that make it an IDE? Well, it depends on what we mean by "integrated". It does not ship with the tools that it uses, like a compiler, the development environment is the whole system itself, and Vim integrates with it. So make your own mind up. _I personally would avoid calling it an IDE, because those are expected to be centralized and Vim is used in a decentralized system._ Checkmate for myself, I guess...
+Does that make it an IDE? Well, it depends on what we mean by "integrated". It does not ship with the tools like a compiler, the development environment is the whole system itself, and Vim integrates with it. _I personally would avoid calling it an IDE, because those are expected to be centralized and Vim is used in a decentralized system._ Checkmate for myself, I guess...
 
 ## Multi-Language Party
 
-The backbone of the edit-compile-edit cycle in Vim is a command. It runs the program defined in the `makeprg` option. Its default value is **make**, which can be called with the `:make` command to run the default **make target**. This is a lot of _make_, I hope it _makes_ sense (ha!)
+The backbone of the edit-compile-edit cycle in Vim is the `:make` command. It runs the program defined in the `makeprg` option. Its default value is **make**, which will run the default **make target**. This is a lot of _make_, I hope it _makes_ sense (ha!)
 
 The output of the `:make` command will populate the **quickfix** list with any errors or warnings that the compiler outputs. You can then navigate through these issues using commands like `:cnext` and `:cprev`, like the ninja you are.
 
@@ -60,7 +60,7 @@ Ruff is being rough, the quickfix list is populated, and I am satisfied.
 
 ## External Formatting
 
-For text indentation, a single press of `=` is enough, but external utilities such as code formatters can be utilized as well. For formatting C code, the following command would do the job: `:!clang-format -i %`. As with any external command, the standard input is the content of the current buffer, and it will be overwritten with the standard output of the command, meaning the memory representation of the file will be updated, in our case, formatted.
+For text indentation, a single press of `=` is enough, but external utilities such as code formatters can be used as well. For formatting C code, the following command would do the job: `:!clang-format -i %`. As with any external command, the standard input is the content of the current buffer, and it will be overwritten with the standard output of the command, meaning the memory representation of the file will be updated, in our case, formatted.
 
 This poses one problem: since the whole buffer is being overwritten, the cursor position will be lost. That is very sad, flowers are dying. This situation can be solved with this function:
 
@@ -85,7 +85,7 @@ autocmd FileType python vnoremap <buffer> <leader>lf :call FormatWithCursor('ruf
 
 ## The Reason
 
-The original reason for the **"Minimalist CLI Development Environment"** was to create an environment with low footprint but tailored to my convenience. These functionalities has another reason for existing: distraction-free programming. After dipping my toes into C programming, I had to realize that I need to go back and spend some quality time learning. So I pick up this setup, a book, and a coffee, and just roll.
+The original reason for the **"Minimalist CLI Development Environment"** was to create an environment with low footprint but tailored to my convenience. These functionalities has another reason for existing: distraction-free programming. After dipping my toes into C programming, I had to realize that I need to go back and spend some quality time learning. So I pick up this setup, a book, and a coffee, and do some _computering™_.
 
 ![Book and Thinkpad](book-and-thinkpad.png)
 
