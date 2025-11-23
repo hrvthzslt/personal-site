@@ -105,4 +105,4 @@ These are the most important features for text editing, in my opinion, but I hav
 - This can scale poorly in large codebases since text-based search will result in a lot of false positives.
 - The knowledge to do this comes from this great video: [How to Do 90% of What Plugins Do (With Just Vim)](https://www.youtube.com/watch?v=XA2WjJbmmoM).
 
-Next time we'll check out, **session/screen management** and **automation**, the other two pillars of this holy trinity.
+[Next time we'll check out, **session/screen management** and **automation**](/posts/birth-of-a-minimalistic-cli-development-environment-ii/), the other two pillars of this holy trinity.

@@ -4,7 +4,7 @@ date: 2025-04-05T14:58:04Z
 draft: false
 ---
 
-Last time, we set up **vim** with no plugins, featuring fabulous capabilities like file navigation, search, and code navigation. This time, we will take care of **screen management** and **automation**. So grab your neckbeard and enjoy the ride.
+[Last time, we set up **vim** with no plugins](/posts/birth-of-a-minimalistic-cli-development-environment-i/), featuring fabulous capabilities like file navigation, search, and code navigation. This time, we will take care of **screen management** and **automation**. So grab your neckbeard and enjoy the ride.
 
 <!--more-->
 
