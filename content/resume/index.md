@@ -1,14 +1,6 @@
 <!-- # Zsolt Horváth -->
 
-<!-- <img align="left" src="nice-picture.png" alt="Zsolt Horváth" style="zoom:75%;" /> -->
-
-<!-- **Backend Software Developer ** | [GitHub](https://github.com/hrvthzslt) | [LinkedIn](https://www.linkedin.com/in/zsolt-horvath-8779147a/) | [hrvth.7slt@gmail.com](mailto:hrvth.7slt@gmail.com) -->
-
-<!-- With a genuine love for computers, I have been interested in coding since a young age and later began learning web development. -->
-
-<!-- This love eventually led to a professional career in backend development, starting as a junior full-stack developer and expanding my experience with a wide range of technologies and programming languages. Over time, I have worked on projects ranging from maintaining and improving legacy monoliths to building brand new applications from the ground up. I am currently focused on backend development, creating robust and scalable solutions designed to handle high traffic. -->
-
-<!-- I am always seeking opportunities to improve my skills and thrive in environments where I can collaborate and learn from others. I occasionally enjoy sharing knowledge through presentations and workshops, and I am motivated by the chance to work towards well-defined goals and make meaningful contributions that have real impact. -->
+<!-- **Backend Software Developer ** | Budapest | [GitHub](https://github.com/hrvthzslt) | [LinkedIn](https://www.linkedin.com/in/zsolt-horvath-8779147a/) | [hrvth.7slt@gmail.com](mailto:hrvth.7slt@gmail.com) -->
 
 Passionate about computers since childhood, I turned my curiosity for coding into a career in backend development. I’ve built and improved everything from legacy monoliths to new services, focusing on robust, scalable solutions for high-traffic environments. I thrive in collaborative teams, enjoy sharing knowledge, and I am always eager to learn and make a real impact.
 
