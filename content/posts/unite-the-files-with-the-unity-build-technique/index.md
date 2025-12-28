@@ -4,7 +4,7 @@ draft = false
 title = 'Unite the Files With the Unity Build Technique'
 +++
 
-Since I don't really know how to program in C and I only have one small pet project, I'm the perfect candidate to preach about build methods. Saving those microseconds will go a long way!
+Since I don’t really know how to program in C and I only have one small pet project, I’m the perfect candidate to preach about build methods. Saving those microseconds will go a long way!
 
 <!--more-->
 
@@ -24,11 +24,11 @@ build:
     chmod +x sysperc
 ```
 
-This is a lot of steps for a small program, so what is happening here? The source files are being compiled one by on into object files. Object files are machine code files that are not yet linked together. Finally, all the object files are linked together into a single executable file.
+That’s a lot of steps for a small program, so what is happening here? The source files are being compiled one by one into object files. Object files are machine code files that are not yet linked together. Finally, all the object files are linked into a single executable, which can be executed without a trial.
 
-The main reason why I did this that I read this in the book I learn C from, but besides my fanaticism there are some advantages to this method:
+The main reason I did this is that I read about it in the book I learned C from, but besides my fanaticism, there are some advantages to this method:
 
-The object files can be disassembled and inspected individually, which means we can see the machine instructions generated for each source file.
+The object files can be disassembled and inspected individually, so we can see the machine instructions generated for each source file.
 
 ```bash
 $ objdump -da build/modules/common.o
@@ -48,13 +48,13 @@ Disassembly of section .text:
 ...
 ```
 
-Another advantage is that we could have different builds for different implementations of a module. For example, the current implementation only can work with Linux, but we could have BSD-specific modules that could be swapped in during the build process. And the expectations for the modules are already defined in header files.
+Another advantage is that we could have different builds for different implementations of a module. For example, the current implementation only works on Linux, we could make a BSD specific build compiling other modules. All the expectations for the modules are already defined in header files, it only needs implementations. (This is big boy programming!)
 
-The build takes `0.254s`, which is almost nothing, but lets try to make it faster anyway. The bottleneck in these build steps are the repeated invocations of the compiler, which means we are facing process and I/O overhead. (I mean we would if this project would have more lines than 278...)
+The build takes `0.254s`, which is almost nothing, but let’s try to make it even faster. The bottleneck in these steps are the repeated invocations of the compiler, causing process and I/O overhead. (Well, we would have that if this project had more than 278 lines of code…)
 
 ## Unity Build Method
 
-Unity builds are a technique where all source files are included into a single source file, like one big happy family. This is usually done by creating a separate source file that includes **EVERYONE**!
+Unity builds are a technique where all source files are included in a single source file, like one big happy family. This is usually done by creating a separate source file that includes **EVERYONE**!
 
 ![everyone!](everyone.png)
 
@@ -65,17 +65,17 @@ Unity builds are a technique where all source files are included into a single s
 ...
 ```
 
-That's the whole file: only includes. One problem that it is poses that the header files will be included multiple times, which will cause redefinition errors. Fortunately include guards are coming to rescue us! It can be done by checking a macros existence and defining it if it's non-existent. We can use the `#ifndef` keyword, which sound like an IKEA furniture so that's a plus. (Also we could use `#pragma once`, which is more modern and possibly faster, but I had no joke for it.) I'm pretty sure it can cause other issues as well, but I did not face them demons.
+That’s the whole file: only includes. One problem is that the header files will be included multiple times, which causes redefinition errors. Fortunately, include guards come to the rescue! This can be handled by checking whether a macro exists and defining it if it’s not present. We can use the `#ifndef` keyword, which sounds like an IKEA furniture, so that’s a plus. (We could also use `#pragma once`, which is more modern and possibly faster, but I have no joke for it.) I’m pretty sure this can cause other issues as well, but I haven’t faced those demons.
 
-From the compilers' perspective, this source file is virtually the same as having one huge file with all the source code, so we can compile it in one go:
+From the compiler’s perspective, this source file is virtually the same as having one huge file with all the source code, so we can compile it in one go:
 
 ```bash
 $ time gcc -Wall -Wextra everyone.c -o sysperc -lm
 real	0m0.121s
 ```
 
-Look at that speed, it tore my eyes out! For a small project it does not look much, but here is an [example for building Inkscape](https://hereket.com/posts/cpp-unity-compile-inkscape/), which goes from thirty minutes to about three.
+Look at that speed, it tore my eyes out! For a small project it doesn’t look like much, but here is an [example for building Inkscape](https://hereket.com/posts/cpp-unity-compile-inkscape/), which goes from thirty minutes to about three.
 
-But don't throw out the build steps with the bathwater, we lost some modularity, but we gained speed. And in fact we can keep _some_ modularity by having multiple unity files, for different platforms or different parts of the project. In the end for my project I won't change the build method, but it was fun to experiment.
+But don’t throw out the build steps with the bathwater, we lost some modularity. In fact, we can keep _some_ modularity by having multiple unity files for different platforms or different parts of the project. In the end, for my project I won’t change the build method, but it was fun to experiment.
 
-The irony of it all if I would never learned about how to build with a C compiler, I would have automatically just include everything in the file where the entry point is defines. Maybe that makes me a genius or maybe stupid, who can tell.
+The irony of it all is that if I’d never learned about how to build with a C compiler, I would have automatically just included everything in the file where the entry point is defined. Maybe that makes me a genius, or maybe stupid, who can tell.
