@@ -30,5 +30,18 @@ This will make you type the passphrase every time, if that is undesirable, and b
 All that remain is the ssh configuration, which will be presented here with an example in it's full glory:
 
 ```bash
+Host *
+    UseKeychain yes
+    AddKeysToAgent yes
+
+Host github.com
+    HostName github.com
+    IdentityFile ~/.ssh/id_main
+    IdentitiesOnly yes
+
+Host work.github.com
+    HostName github.com
+    IdentityFile ~/.ssh/id_work
+    IdentitiesOnly yes
 ```
 
