@@ -30,10 +30,6 @@ This will make you type the passphrase every time, if that is undesirable, and b
 All that remain is the ssh configuration, which will be presented here with an example in it's full glory:
 
 ```bash
-Host *
-    UseKeychain yes
-    AddKeysToAgent yes
-
 Host github.com
     HostName github.com
     IdentityFile ~/.ssh/id_main
@@ -44,4 +40,13 @@ Host work.github.com
     IdentityFile ~/.ssh/id_work
     IdentitiesOnly yes
 ```
+
+This config will make the `github.com` host use the main key, and the `work.github.com` host use the work key. So when you want to clone a repository from the work account, you can use:
+
+
+```bash
+git clone git@work.github.com/username/repository.git
+```
+
+Viola! That is all, I'm looking forward to forget this, at least I will have this post.
 
