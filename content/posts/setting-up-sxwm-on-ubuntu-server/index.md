@@ -12,7 +12,7 @@ Instead of the usual rambling, I'll make a guide for something that I find reall
 
 ## Preparing Ubuntu
 
-If you expected that I would guide you through the installation, you will be disappointed. Download the server ISO, install it on a machine or a VM—I will use the latter. Finish the installation, and do not install any additional packages that could be handy for a server, we won't need them. Do an `update` and `upgrade`, and you should see something like this when you find out who and where you are:
+If you expected that I would guide you through the installation, you will be disappointed. Download the server ISO, install it on a machine or a VM, I will use the latter. Finish the installation, and do not install any additional packages that could be handy for a server, we won't need them. Do an `update` and `upgrade`, and you should see something like this when you find out who and where you are:
 
 ![After Install](after-install.png)
 
@@ -20,7 +20,7 @@ Yes, my user is `me`, because me is me. Makes sense.
 
 Without starting any religious war, we will remove `snap`. There are a couple of reasons: I don't like it, we don't need it, and I don't like it. I'm not against **universal package managers**, but for me, snap does not feel so snappy. If you like it, don't dismiss it.
 
-Luckily, in **Ubuntu Server** this is very easy—it will bite back, but that is part of the fun. You can check how many snap packages you have with: `snap list`. If you did not install any extra packages, this should be zero, which is great, snap can be removed. We will remove it and hold it back:
+Luckily, in **Ubuntu Server** this is very easy, it will bite back, but that is part of the fun. You can check how many snap packages you have with: `snap list`. If you did not install any extra packages, this should be zero, which is great, snap can be removed. We will remove it and hold it back:
 
 ```shell
 sudo apt remove --purge snapd
@@ -59,7 +59,7 @@ Without knowing the key bindings, you may have a "vim" experience exiting from i
 
 But we're going to do something much more interesting: building one ourselves, and it's not going to be **dwm**. Crazy!
 
-We're going to use **sxwm**, a newborn—at the time when I'm writing this, it's 2 weeks old. The reason it caught my eye is its layout is very similar to **dwm**, but it has a very short and simple config file and it has hot reload. And it mostly does everything that I patched into **dwm**. Check out the [repository](https://github.com/uint23/sxwm), star it if you like it, it's really impressive.
+We're going to use **sxwm**, a newborn, at the time when I'm writing this, it's 2 weeks old. The reason it caught my eye is its layout is very similar to **dwm**, but it has a very short and simple config file and it has hot reload. And it mostly does everything that I patched into **dwm**. Check out the [repository](https://github.com/uint23/sxwm), star it if you like it, it's really impressive.
 
 Some general lessons about building software:
 
@@ -91,7 +91,7 @@ Add the following line to `.xinitrc`:
 exec sxwm
 ```
 
-Run the command `startx`, and congratulations—you see a black screen. I will spare your time, you can exit with `Super+Shift+e`.
+Run the command `startx`, and congratulations, you see a black screen. I will spare your time, you can exit with `Super+Shift+e`.
 
 By default, this window manager has some bindings to suckless tools. We can install them just for trying it out.
 
@@ -154,7 +154,7 @@ unfocused_border_colour  : #b4b4b4
 swap_border_colour       : #ef6155
 ```
 
-Pressing `Super+r` will apply the changes in the current session—remember, _hot reload_.
+Pressing `Super+r` will apply the changes in the current session, remember, _hot reload_.
 
 Adding a wallpaper would be nice as well, so install `ubuntu-wallpapers` and `feh`. We will use it soon!
 

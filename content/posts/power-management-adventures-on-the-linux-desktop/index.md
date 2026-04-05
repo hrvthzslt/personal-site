@@ -4,7 +4,7 @@ date: 2025-05-01T15:12:48Z
 draft: false
 ---
 
-If you are a normal, well-balanced person, you probably install a distro with a desktop environment, and when you want to change your power settings, you just search for the menu and do it. In my world, this is not how things are done—sorry.
+If you are a normal, well-balanced person, you probably install a distro with a desktop environment, and when you want to change your power settings, you just search for the menu and do it. In my world, this is not how things are done, sorry.
 
 I have already documented [what I lost when I switched to a **window manager**](/posts/the-many-lessons-of-building-dwm/) and [how I created a new status bar with **dwmblocks**](/posts/replace-slstatus-with-dwmblocks-while-contemplating-performance/). Now, the time has come to implement a power management feature.
 
@@ -18,7 +18,7 @@ For some time, I managed CPU frequency by setting the desired **governor** manua
 echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 ```
 
-I'm not an animal—I didn't type this command every time. Instead, I used a script that collects the available governors, which can be selected from a list using the beloved **fzf** command-line tool.
+I'm not an animal, I didn't type this command every time. Instead, I used a script that collects the available governors, which can be selected from a list using the beloved **fzf** command-line tool.
 
 I didn't have any problems per se, but another topic caught my attention.
 

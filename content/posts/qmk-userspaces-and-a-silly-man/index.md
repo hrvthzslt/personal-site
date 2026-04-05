@@ -40,4 +40,4 @@ And we have a **side adventure**! While checking out the example [repository](ht
 
 So the **moral** of the story is: really read the friendly manual.
 
-_(This post mentions "userspace" and "repository" eight-, "QMK" seven times —not including references and commands— and "symlink" four times. Maybe I'm not a writer. Interesting.)_
+_(This post mentions "userspace" and "repository" eight-, "QMK" seven times (not including references and commands) and "symlink" four times. Maybe I'm not a writer. Interesting.)_

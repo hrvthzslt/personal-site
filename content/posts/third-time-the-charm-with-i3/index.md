@@ -12,7 +12,7 @@ The _improved improved improved window manager_ always bugged me, and I've tried
 
 There are some benefits to using **i3**: it's widely accessible, easy to configure, and has very good documentation. One important thing to understand is that although new windows take up the most space on the screen, this is still a manual tiler. Instead of having a set layout, you manage it on the fly. This is the most distinct feature of **i3**, and it's also the one I like the least. It's common practice to make **i3** an auto-tiler with scripts, but I did not want to go that route. I just want to use it as it's meant to be by design. And honestly, I can use any kind of tiling because usually, I have only one or two windows per workspace.
 
-As you can guess, I did not change much visually—mostly kept the default colors and reduced the information on the **i3status** bar.
+As you can guess, I did not change much visually, mostly kept the default colors and reduced the information on the **i3status** bar.
 
 The most time-consuming part was setting up the keybindings because I already had a lot of expectations in that area. I use `sxhkd` with **dwm**, but I made my i3 config simpler, so I said goodbye to it.
 
