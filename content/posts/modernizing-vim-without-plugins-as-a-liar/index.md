@@ -12,7 +12,7 @@ After the unbelievable chronicles of [Minimalist CLI Development Environment](/p
 
 The main commands in **Vim** for file and code navigation that I choose to use are `:find` and `:vimgrep`. `:find` is really really good, but it is slow if there are a lot of files in the project. You can offset that problem with creative usage of wildcards, and showing completion options at any time with `C-d`.
 
-x=gif= file previews
+![File preview](file-preview.gif)
 
 `:vimgrep` is also slow. The reason why I like it is that it is available from Vim 7.0, that is the oldest version that I need compatibility with. Also it is independent from a system command, so the lack of a `grep` command or the fact that it has multiple implementations with different flags won't cause any problems.
 
