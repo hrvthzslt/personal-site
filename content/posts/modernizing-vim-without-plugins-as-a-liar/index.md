@@ -12,7 +12,7 @@ After the unbelievable chronicles of [Minimalist CLI Development Environment](/p
 
 The main commands in **Vim** for file and code navigation that I choose to use are `:find` and `:vimgrep`. `:find` is really really good, but it is slow if there are a lot of files in the project. You can offset that problem with creative usage of wildcards, and showing completion options at any time with `C-d`.
 
-=gif= file previews
+x=gif= file previews
 
 `:vimgrep` is also slow. The reason why I like it is that it is available from Vim 7.0, that is the oldest version that I need compatibility with. Also it is independent from a system command, so the lack of a `grep` command or the fact that it has multiple implementations with different flags won't cause any problems.
 
@@ -46,7 +46,7 @@ endif
 
 This is only just a segment, for demonstrating that I was not really content with this solution. And it did break another compatibility, up until this time, this config was compatible with **Neovim** as well, and I was not up for figuring out how to fix that.
 
-=gif= fzf the stupid way
+x=gif= fzf the stupid way
 
 ## fzf like a Normal Person
 
@@ -79,7 +79,7 @@ The `SearchFiles` function checks if the `:FZF` command exists, and if the `mode
 
 Finally, there is a keybinding, because in the end of the day, we want to press keys.
 
-=gif= fzf the normal way
+x=gif= fzf the normal way
 
 ## ripgrep
 
@@ -108,7 +108,7 @@ In the end, the `:grep` command will be typed and the cursor will be positioned 
 
 If the conditions are not met, similar story, but with `:vimgrep` and no fancy features.
 
-=gif= ripgrep
+x=gif= ripgrep
 
 ## Conclusion
 
