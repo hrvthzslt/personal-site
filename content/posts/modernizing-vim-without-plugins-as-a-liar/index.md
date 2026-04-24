@@ -46,7 +46,7 @@ endif
 
 This is only just a segment, for demonstrating that I was not really content with this solution. And it did break another compatibility, up until this time, this config was compatible with **Neovim** as well, and I was not up for figuring out how to fix that.
 
-x=gif= fzf the stupid way
+![Silly fzf in Vim](silly-fzf-vim.gif)
 
 ## fzf like a Normal Person
 
@@ -79,7 +79,7 @@ The `SearchFiles` function checks if the `:FZF` command exists, and if the `mode
 
 Finally, there is a keybinding, because in the end of the day, we want to press keys.
 
-x=gif= fzf the normal way
+![fzf in Vim](fzf-vim.gif)
 
 ## ripgrep
 
@@ -108,7 +108,9 @@ In the end, the `:grep` command will be typed and the cursor will be positioned 
 
 If the conditions are not met, similar story, but with `:vimgrep` and no fancy features.
 
-x=gif= ripgrep
+Now let's see matching word under cursor in selected file extensions (In this example we can see that this is indeed just a simple text match):
+
+![Ripgrep in Vim](rg-vim.gif)
 
 ## Conclusion
 
