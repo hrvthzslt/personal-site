@@ -10,7 +10,9 @@ After the unbelievable chronicles of [Minimalist CLI Development Environment](/p
 
 ## Problem
 
-The main commands in **Vim** for file and code navigation that I choose to use are `:find` and `:vimgrep`. `:find` is really, really good, but it is slow if there are a lot of files in the project. You can offset that problem with creative usage of wildcards, and showing completion options at any time with `C-d`.
+The main commands in **Vim** for file and code navigation that I choose to use are `:find` and `:vimgrep`.
+
+`:find` is really, really good, but it is slow if there are a lot of files in the project. You can offset that problem with creative usage of wildcards, and showing completion options at any time with `C-d`.
 
 ![File preview](file-preview.gif)
 
@@ -30,7 +32,9 @@ I hope this is enough context to understand. We are going to use it to search fi
 
 There is an elegant way to integrate **fzf** with Vim. I was concerned about portability, so I solved the problem at first with some horrible Vimscript. I'm only sharing the important part.
 
-And for the record, at this point, I'm not even ashamed that I did not come up with this myself. It runs a shell command which finds files excluding the `.git` directory, and then pipes the output to **fzf**. The result is written to a temporary file, which is read back into **Vim**, and then the first line is opened.
+And for the record, at this point, I'm not even ashamed that I did not come up with this myself.
+
+It runs a shell command which finds files excluding the `.git` directory, and then pipes the output to **fzf**. The result is written to a temporary file, which is read back into **Vim**, and then the first line is opened.
 
 ```vim
 let l:tmp = tempname()
@@ -44,7 +48,7 @@ if !empty(l:choice)
 endif
 ```
 
-This is only a segment, demonstrating that I was not really content with this solution. And it did break another compatibility, up until this time, this config was compatible with **Neovim** as well, and I was not up for figuring out how to fix that.
+This is only a segment, demonstrating that I was not really content with this solution. And it did break another compatibility. Up until this time, this config was compatible with **Neovim** as well, and I was not up for figuring out how to fix that.
 
 ![Silly fzf in Vim](silly-fzf-vim.gif)
 
@@ -71,7 +75,7 @@ nnoremap <leader>sf :call SearchFiles()<CR>
 
 Let us digest this beautiful piece of code.
 
-`rtp` stands for `runtimepath`, there are two paths, the first is the plugin path in Debian (and I guess on other distros as well), and the second is the plugin path for Homebrew on Mac (Silicon). I do not check their existence; life is unfair. Grow up.
+`rtp` stands for `runtimepath`, there are two paths, the first is the plugin path in Debian (and I guess on other distros as well), and the second is the plugin path for Homebrew on Mac (Silicon). I do not check their existence. Life is unfair. Grow up.
 
 The `FZF_DEFAULT_COMMAND` environment variable is set to the same command we used in the previous section, but now it is used by the plugin, so we don't have to deal with temporary files and all that jazz.
 
@@ -108,10 +112,10 @@ In the end, the `:grep` command will be typed and the cursor will be positioned 
 
 If the conditions are not met, similar story, but with `:vimgrep` and no fancy features.
 
-Now let's see the matching word under the cursor in selected file extensions (In this example, we can see that this is indeed just a simple text match):
+Now let's see the matching word under the cursor in selected file extensions (In this example, we can see that this is just a simple text match):
 
 ![Ripgrep in Vim](rg-vim.gif)
 
 ## Conclusion
 
-So there you have it, modern tools in **Vim** without plugins and with use of a plugin. I am quite happy that I managed to integrate these tools while keeping the compatibility. Good for me.
+So there we have it, modern tools in **Vim** without plugins and with use of a plugin. I am quite happy that I managed to integrate these tools while keeping the compatibility. Good for me.
