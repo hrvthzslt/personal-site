@@ -10,11 +10,11 @@ After the unbelievable chronicles of [Minimalist CLI Development Environment](/p
 
 ## Problem
 
-The main commands in **Vim** for file and code navigation that I choose to use are `:find` and `:vimgrep`. `:find` is really really good, but it is slow if there are a lot of files in the project. You can offset that problem with creative usage of wildcards, and showing completion options at any time with `C-d`.
+The main commands in **Vim** for file and code navigation that I choose to use are `:find` and `:vimgrep`. `:find` is really, really good, but it is slow if there are a lot of files in the project. You can offset that problem with creative usage of wildcards, and showing completion options at any time with `C-d`.
 
 ![File preview](file-preview.gif)
 
-`:vimgrep` is also slow. The reason why I like it is that it is available from Vim 7.0, that is the oldest version that I need compatibility with. Also it is independent from a system command, so the lack of a `grep` command or the fact that it has multiple implementations with different flags won't cause any problems.
+`:vimgrep` is also slow. The reason why I like it is that it is available from Vim 7.0, which is the oldest version that I need compatibility with. Also it is independent from a system command, so the lack of a `grep` command or the fact that it has multiple implementations with different flags won't cause any problems.
 
 So there is a general scaling issue, the bigger the project, the slower these commands will be. And this **Development Environment** is meant to be used in restricted environments, with modest performance, where these problems will be more pronounced.
 
@@ -28,9 +28,9 @@ First, what the heck is **fzf**?
 
 I hope this is enough context to understand. We are going to use it to search files and open them.
 
-There is an elegant way to integrate **fzf** with Vim, I was concerned about portability so I solved the problem at first with some horrible Vimscript. I'm only sharing the important part.
+There is an elegant way to integrate **fzf** with Vim. I was concerned about portability, so I solved the problem at first with some horrible Vimscript. I'm only sharing the important part.
 
-And for the record, at this point, I'm not even ashamed that I did not come up with this. It runs a shell command which finds files excluding the `.git` directory, and then pipes the output to **fzf**. The result is written to a temporary file, which is read back into **Vim**, and then the first line is opened.
+And for the record, at this point, I'm not even ashamed that I did not come up with this myself. It runs a shell command which finds files excluding the `.git` directory, and then pipes the output to **fzf**. The result is written to a temporary file, which is read back into **Vim**, and then the first line is opened.
 
 ```vim
 let l:tmp = tempname()
@@ -44,15 +44,15 @@ if !empty(l:choice)
 endif
 ```
 
-This is only just a segment, for demonstrating that I was not really content with this solution. And it did break another compatibility, up until this time, this config was compatible with **Neovim** as well, and I was not up for figuring out how to fix that.
+This is only a segment, demonstrating that I was not really content with this solution. And it did break another compatibility, up until this time, this config was compatible with **Neovim** as well, and I was not up for figuring out how to fix that.
 
 ![Silly fzf in Vim](silly-fzf-vim.gif)
 
 ## fzf like a Normal Person
 
-The really cool thing that **fzf** comes packaged with a vim plugin, so yes, you cannot trust me there is a plugin, but it is not handled by a plugin manager. It provides a command `:FZF`, I'm sure you can figure out its purpose.
+The really cool thing is that **fzf** comes packaged with a Vim plugin. So yes, you cannot trust me; there is a plugin, but it is not handled by a plugin manager. It provides a command `:FZF`, I'm sure you can figure out its purpose.
 
-There are still two things that need to be handled: Setting up a command for **fzf** to ignore the `.git` directory, and adding the plugin path to the `runtimepath`. That is path for runtime files, _the more you know_...
+There are still two things that need to be handled: Setting up a command for **fzf** to ignore the `.git` directory, and adding the plugin path to the `runtimepath`. That is the path for runtime files, _the more you know_...
 
 ```vim
 set rtp+=/usr/share/doc/fzf/examples,/opt/homebrew/opt/fzf
@@ -71,13 +71,13 @@ nnoremap <leader>sf :call SearchFiles()<CR>
 
 Let us digest this beautiful piece of code.
 
-`rtp` stands for `runtimepath`, there are two paths, the first is the plugin path in Debian (and I guess on other distros as well), and the second is the plugin path for Homebrew on Mac (Silicon). I do not check their existence, life is unfair, grow up.
+`rtp` stands for `runtimepath`, there are two paths, the first is the plugin path in Debian (and I guess on other distros as well), and the second is the plugin path for Homebrew on Mac (Silicon). I do not check their existence; life is unfair. Grow up.
 
 The `FZF_DEFAULT_COMMAND` environment variable is set to the same command we used in the previous section, but now it is used by the plugin, so we don't have to deal with temporary files and all that jazz.
 
-The `SearchFiles` function checks if the `:FZF` command exists, and if the `modern_tools` variable is set to true. I introduced an additional variable to provide the ability to disable this whole craziness.
+The `SearchFiles` function checks if the `:FZF` command exists, and if the `modern_tools` variable is set to true. I introduced an additional variable to provide the ability to disable all this craziness.
 
-Finally, there is a keybinding, because in the end of the day, we want to press keys.
+Finally, there is a keybinding because, at the end of the day, we want to press keys.
 
 ![fzf in Vim](fzf-vim.gif)
 
@@ -85,7 +85,7 @@ Finally, there is a keybinding, because in the end of the day, we want to press 
 
 The wonderful thing about **ripgrep** is that you type `rg printf` and you get a list of all occurrences without having time to blink, and you should blink, it is good for your eyes.
 
-I use it for searching for word under the cursor in selected file types and for general search, let's inspect the latter:
+I use it for searching for the word under the cursor in selected file types and for general search. Let's inspect the latter:
 
 ```vim
 function! SearchInFiles()
@@ -102,16 +102,16 @@ nnoremap <leader>sg :call SearchInFiles()<CR>
 
 Looks like a lot, but hold on to your pants. If the `rg` executable is present on the system the glass is half full, for the second half we have the `modern_tools` variable again.
 
-`grepprg` is the option for the grep program that will be used by the `:grep` Vim command which is by default the `grep -n` system command. Yes this is a sentence. Also the `grepformat` is set for compatible output parsing.
+`grepprg` is the option for the grep program that will be used by the `:grep` Vim command which is by default the `grep -n` system command. Yes this is a sentence. Also, the `grepformat` is set for compatible output parsing.
 
 In the end, the `:grep` command will be typed and the cursor will be positioned and wait for our search term. The TUI falls apart after searches, so I added `redraw!` to fix that, and indeed it fixes that.
 
 If the conditions are not met, similar story, but with `:vimgrep` and no fancy features.
 
-Now let's see matching word under cursor in selected file extensions (In this example we can see that this is indeed just a simple text match):
+Now let's see the matching word under the cursor in selected file extensions (In this example, we can see that this is indeed just a simple text match):
 
 ![Ripgrep in Vim](rg-vim.gif)
 
 ## Conclusion
 
-So there you have it, modern tools in **Vim** without plugins and with use of a plugin. I am quite happy that I managed to integrate these tools while keeping the compatibility, good for me.
+So there you have it, modern tools in **Vim** without plugins and with use of a plugin. I am quite happy that I managed to integrate these tools while keeping the compatibility. Good for me.
