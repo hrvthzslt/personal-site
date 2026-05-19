@@ -39,4 +39,6 @@ The hash entries will look like this:
 
 This keeps track of the file path and the hash as well, so if the file changes, the hash will change and the file will not be trusted anymore. This is a simple way to implement a trust mechanism having only a file as storage/state. There is no cleanup, life is hard and short.
 
+Another fun fact is that I used the `sha256` function from **Vimscript** to calculate the hash of the file, not the `sha256sum` or `shasum` command from the shell. The reason is that the function implementation is consistent across platforms, while the command is not. That means this solution needs at least **Vim** 7.4, but what can we do, this is the _UNIX wild wild west_...
+
 In the end I have the local configuration functionality as I want, yet again without plugins. _(At first I wanted to share the script instead of the activity diagram, but you know what big boys say: "That is only an [implementation detail.](vimrc.local)")_
