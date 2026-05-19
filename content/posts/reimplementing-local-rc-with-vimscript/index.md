@@ -8,7 +8,7 @@ This title may seem strange, so let's break it down. **Reimplementing** means im
 
 <!--more-->
 
-Fabulous old **Vim** has an option called `exrc` (legacy alert!), which allows the execution of a configuration file that is located in the current directory. This is basically poor mans project-specific configuration. For a time I did not know that this option existed, I had some **Vimscript** do this dirty work for me: looking for a `.vimrc.local` file in the current directory and sourcing it.
+Fabulous old **Vim** has an option called `exrc` (legacy alert!), which allows the execution of a configuration file that is located in the current directory. This is basically poor man's project-specific configuration. For a time I did not know that this option existed, I had some **Vimscript** do this dirty work for me: looking for a `.vimrc.local` file in the current directory and sourcing it.
 
 So I happened to find out about `exrc` and I was ready to drop my silly little code until I inspected the situation. When `exrc` option is set a list of files is checked for existence and will be executed without any question or resistance. This is very similar to what I did, but further investigation led me to another option called `secure`. So big surprise: if you execute files willy-nilly, that is a security concern.
 
@@ -24,11 +24,11 @@ This poses at least some problems:
 - There can be a version of **Vim** which has `exrc` but not `secure`.
 - Also **Neovim** has these options but handles them with a trust mechanism, I want that!
 
-There were multiple versions of the function that handled this. First it just read a certain file called `.vimrc.local` if it were present in the working directory and sourced it. After that I added a prompt to as the user to trust the file and stored all trusted paths. That raised a problem, trusted files can be changed so they should no be trusted any more.
+There were multiple versions of the function that handled this. First it just read a certain file called `.vimrc.local` if it were present in the working directory and sourced it. After that I added a prompt to ask the user to trust the file and stored all trusted paths. That raised a problem, trusted files can be changed so they should not be trusted anymore.
 
 ![Activity diagram](activity.png)
 
-There is a full recursion which is not necessarily necessary, but I find the recursive call expresses a clearer intent in the implementation than an ad-hoc loop. This is not the best choice, but mine.
+There is a full recursion which is not strictly necessary, but I find the recursive call expresses a clearer intent in the implementation than an ad-hoc loop. This is not the best choice, but mine.
 
 The hash entries will look like this:
 
