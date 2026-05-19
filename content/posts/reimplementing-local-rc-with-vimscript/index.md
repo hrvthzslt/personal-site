@@ -24,11 +24,11 @@ This poses at least some problems:
 - There can be a version of **Vim** which has `exrc` but not `secure`.
 - Also **Neovim** has these options but handles them with a trust mechanism, I want that!
 
-There were multiple versions of the function that handled this. First it just read a certain file called `.vimrc.local` if it were present in the working directory and sourced it. After that I added a prompt to ask the user to trust the file and stored all trusted paths. That raised a problem, trusted files can be changed so they should not be trusted anymore.
+There were multiple versions of this "reimplementation". First it just read a certain file called `.vimrc.local` if it were present in the working directory and sourced it. After that I added a prompt to ask the user to trust the file and stored all trusted paths. That raised a problem, trusted files can be changed so they should not be trusted anymore. So in the end I added the hash of the file to the trusted paths. Witness!
 
 ![Activity diagram](activity.png)
 
-There is a full recursion which is not strictly necessary, but I find the recursive call expresses a clearer intent in the implementation than an ad-hoc loop. This is not the best choice, but mine.
+There is a full recursion which is not necessarily necessary, but I find the recursive call expresses a clearer intent in the implementation than an ad-hoc loop. This is not the best choice, but mine.
 
 The hash entries will look like this:
 
@@ -37,6 +37,6 @@ The hash entries will look like this:
 /home/user/workspace/never-finished-rust-project/.vimrc.local|1dac7e4ca536b432953d0609a0e8eef8de3607a6e47c5740d58c168ddb881de7
 ```
 
-This keeps track of the file path and the hash as well, so if the file changes, the hash will change and the file will not be trusted anymore. This is a simple way to implement a trust mechanism having only a file as storage/state.
+This keeps track of the file path and the hash as well, so if the file changes, the hash will change and the file will not be trusted anymore. This is a simple way to implement a trust mechanism having only a file as storage/state. There is no cleanup, life is hard and short.
 
 In the end I have the local configuration functionality as I want, yet again without plugins. _(At first I wanted to share the script instead of the activity diagram, but you know what big boys say: "That is only an [implementation detail.](vimrc.local)")_
