@@ -8,7 +8,7 @@ My childhood passion for computers turned into a career in backend development. 
 
 - 2026 - Present - **Senior Software Engineer** at [**Recart**](https://recart.com/)
   - Expanding the integration feature set of the company's SMS marketing and list growth platform.
-  - Maintaining the associated microservices with **TypeScript, Node.js, MongoDB, Redis, and DynamoDB**.
+  - Maintaining and monitoring the associated microservices using **TypeScript, Node.js, MongoDB, Redis, DynamoDB**, and **Datadog**.
   - Ensuring fault tolerance and high availability with the help of **SQS** and **SNS**.
   - Contributing to a rapidly evolving **MCP server** to support merchants' agentic workflows.
 
@@ -44,5 +44,4 @@ My childhood passion for computers turned into a career in backend development. 
 
 ## Education
 
-- 2010 - 2012 - **Szent György Média és Informatikai Szakgimnázium**\
-  Web Development Qualification by National Qualification Register
+- 2010 - 2012 - **Szent György Média és Informatikai Szakgimnázium** - Web Developer Qualification by National Qualification Register
