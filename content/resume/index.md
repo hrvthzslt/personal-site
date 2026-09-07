@@ -2,7 +2,7 @@
 
 <!-- **Backend Software Developer ** | Budapest | [GitHub](https://github.com/hrvthzslt) | [LinkedIn](https://www.linkedin.com/in/zsolt-horvath-8779147a/) | [hrvth.7slt@gmail.com](mailto:hrvth.7slt@gmail.com) -->
 
-Passionate about computers since childhood, I turned my curiosity for coding into a career in backend development. I’ve built and improved everything from legacy monoliths to new services, focusing on robust, scalable solutions for high-traffic environments. I thrive in collaborative teams, enjoy sharing knowledge, and I am always eager to learn and make a real impact.
+My childhood passion for computers turned into a career in backend development. I've worked on a wide range of projects, from legacy monoliths to new services, in high-traffic environments where reliability and availability matter. I enjoy working in teams, sharing knowledge, and making a positive impact whenever I can.
 
 ## Career
 
@@ -27,12 +27,12 @@ Passionate about computers since childhood, I turned my curiosity for coding int
   - Developing and maintaining new features of the company's main product and onsite software using a stack that included **PHP, MySQL, Redis, and Memcached**.
   - Developing new features in microservices architecture with the help of **Laravel, Kafka, Docker**
 
-- 2020 - 2021 – **Senior Software Developer** at [**Mindtech Apps**](https://mindtechapps.com/)
+- 2020 - 2021 - **Senior Software Developer** at [**Mindtech Apps**](https://mindtechapps.com/)
   - Developing backend REST APIs with **PHP** and **Laravel**.
   - Developing backend APIs with **GraphQL** using **JavaScript/TypeScript** and **NestJS**.
   - Assisting frontend team with API integrations
 
-- 2013 - 2020 – **Software Developer at SR Limnatis Holdings Ltd**
+- 2013 - 2020 - **Software Developer at SR Limnatis Holdings Ltd**
   - Developing tube sites, administration, CMS, and webmaster sites, as well as supporting services, in **PHP** and **JavaScript**.
   - Refactoring and rebuilding a legacy project from plain PHP to **CodeIgniter** and, years later, to **Laravel**, while supporting new version updates.
   - Scaling sites for high traffic (40M+ views per day) with the help of databases such as **MySQL** and **MongoDB**, with **Redis** as a cache layer.
@@ -44,5 +44,5 @@ Passionate about computers since childhood, I turned my curiosity for coding int
 
 ## Education
 
-- 2010 - 2012 – **Szent György Média és Informatikai Szakgimnázium**\
+- 2010 - 2012 - **Szent György Média és Informatikai Szakgimnázium**\
   Web Development Qualification by National Qualification Register
