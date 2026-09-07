@@ -8,42 +8,39 @@ Passionate about computers since childhood, I turned my curiosity for coding int
 
 - 2026 - Present - **Senior Software Engineer** at [**Recart**](https://recart.com/)
   - Expanding the integration feature set of the company's SMS marketing and list growth platform.
-  - Maintaining the associated microservices with **Typescript, NodeJs, MongoDb, Redis and Dynamodb**.
-  - Ensure fault tolerance and high availability with the help of **SQS** and **SNS**.
-  - Contributing to a rapidly evolving **MCP Server** aimed at the platform using merchants.
+  - Maintaining the associated microservices with **TypeScript, Node.js, MongoDB, Redis, and DynamoDB**.
+  - Ensuring fault tolerance and high availability with the help of **SQS** and **SNS**.
+  - Contributing to a rapidly evolving **MCP server** to support merchants' agentic workflows.
 
 - 2024 - 2026 - **Staff Software Engineer** at [**Byborg Enterprises**](https://www.byborgenterprises.com/)
-  - Planning and developing new features for a legacy streaming site and its services under heavy load with performance awareness using **Python, Flask, MySql, Redis, Elasticsearch, Kafka**, and **Docker**.
-  - Integrating third-party **Recommendation** engine, while ensuring high availability.
+  - Planning and developing new features for a legacy streaming site and its services under heavy load with a focus on performance, using **Python, Flask, MySQL, Redis, Elasticsearch, Kafka**, and **Docker**.
+  - Integrating a third-party recommendation engine while ensuring high availability.
   - Contributing to the introduction of new technologies, setting up local environments for legacy projects with **Docker**.
 
 - 2023 - 2024 - **Senior Software Developer** at [**Billingo**](https://www.billingo.hu/)
-  - Adding new features to the company's main product with **PHP, Laravel, MySql, Redis, Elasticsearch** and **Docker** as main technologies.
-  - Integrating data synchronization to external CRM system while not blocking user interaction.
-  - As a high impact change, which affected code base and deployment as well, I upgraded multiple framework versions and mitigated performance hits.
-  - Monitoring with **Grafana**, error tracking with **Sentry**, automating deployment with **Github Actions**, automating infrastructure with **Ansible**.
+  - Adding new features to the company's main product using **PHP, Laravel, MySQL, Redis, Elasticsearch**, and **Docker** as the main technologies.
+  - Integrating data synchronization with an external CRM system without blocking user interaction.
+  - As part of a high-impact change affecting both the codebase and deployment, upgrading multiple framework versions and mitigating performance hits.
+  - Monitoring with **Grafana**, tracking errors with **Sentry**, automating deployment with **GitHub Actions**, and automating infrastructure with **Ansible**.
 
 - 2021 - 2023 - **Senior Software Developer** at [**Webshippy**](https://webshippy.com/)
-  - Developing and maintaining new features of the company's main product and onsite software with a stack containing the following technologies: **PHP, MySql, Redis, Memcached**
+  - Developing and maintaining new features of the company's main product and onsite software using a stack that included **PHP, MySQL, Redis, and Memcached**.
   - Developing new features in microservices architecture with the help of **Laravel, Kafka, Docker**
 
 - 2020 - 2021 – **Senior Software Developer** at [**Mindtech Apps**](https://mindtechapps.com/)
-  - Developing backend Rest API with **PHP** and **Laravel**
-  - Developing backend API with **GraphQL** with **Javascript/TypeScript** and **NestJs**
+  - Developing backend REST APIs with **PHP** and **Laravel**.
+  - Developing backend APIs with **GraphQL** using **JavaScript/TypeScript** and **NestJS**.
   - Assisting frontend team with API integrations
 
 - 2013 - 2020 – **Software Developer at SR Limnatis Holdings Ltd**
-  - Developing tube sites, administration site, cms and webmaster site and supporting services in **PHP**
-    and **Javascript**
-  - Refactor and rebuild legacy project from plain PHP to **Codeigniter** and years later to **Laravel**, support new
-    version updates
-  - Scale sites for high traffic (40M+ views per day) with the help of databases such as **MySql**
-    and **MongoDb** and with **Redis** as a cache layer
-  - Implementing **Elasticsearch** for searching and filtering on our tube sites
+  - Developing tube sites, administration, CMS, and webmaster sites, as well as supporting services, in **PHP** and **JavaScript**.
+  - Refactoring and rebuilding a legacy project from plain PHP to **CodeIgniter** and, years later, to **Laravel**, while supporting new version updates.
+  - Scaling sites for high traffic (40M+ views per day) with the help of databases such as **MySQL** and **MongoDB**, with **Redis** as a cache layer.
+  - Implementing **Elasticsearch** for searching and filtering on our tube sites.
 
 - 2013 February - September – **Mobile Application Developer and Manual Tester** at [**Appsters**](https://appsters.me/)
-  - Compose mobile applications with a set code bases for multiple platforms (iOS, Android, Windows Phone)
-  - Manual testing for said mobile application by a predefined report
+  - Developing mobile applications from a shared codebase for multiple platforms (iOS, Android, Windows Phone).
+  - Manually testing the mobile applications using predefined test cases.
 
 ## Education
 
