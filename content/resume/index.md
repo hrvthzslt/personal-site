@@ -1,8 +1,8 @@
 <!-- # Zsolt Horváth -->
 
-<!-- **Backend Software Developer ** | Budapest | [GitHub](https://github.com/hrvthzslt) | [LinkedIn](https://www.linkedin.com/in/zsolt-horvath-8779147a/) | [hrvth.7slt@gmail.com](mailto:hrvth.7slt@gmail.com) -->
+<!-- **Senior Software Developer ** | Budapest | [GitHub](https://github.com/hrvthzslt) | [LinkedIn](https://www.linkedin.com/in/zsolt-horvath-8779147a/) | [hrvth.7slt@gmail.com](mailto:hrvth.7slt@gmail.com) -->
 
-My childhood passion for computers turned into a career in backend development. I've worked on a wide range of projects, from legacy monoliths to new services, in high-traffic environments where reliability and availability matter. I enjoy working in teams, sharing knowledge, and making a positive impact whenever I can.
+My childhood passion for computers turned into a software engineering career with backend focus. I've worked on a wide range of projects, from legacy monoliths to new services, in high-traffic environments where reliability and availability matter. I enjoy working in teams, sharing knowledge, and making a positive impact whenever I can.
 
 ## Career
 
@@ -13,7 +13,7 @@ My childhood passion for computers turned into a career in backend development. 
   - Contributing to a rapidly evolving **MCP server** to support merchants' agentic workflows.
 
 - 2024 - 2026 - **Staff Software Engineer** at [**Byborg Enterprises**](https://www.byborgenterprises.com/)
-  - Planning and developing new features for a legacy streaming site and its services under heavy load with a focus on performance, using **Python, Flask, MySQL, Redis, Elasticsearch, Kafka**, and **Docker**.
+  - Planning and developing new features for a legacy streaming site and its services under heavy load (~10M daily users) with performance awareness, using **Python, Flask, MySQL, Redis, Elasticsearch, Kafka**, and **Docker**.
   - Integrating a third-party recommendation engine while ensuring high availability.
   - Contributing to the introduction of new technologies, setting up local environments for legacy projects with **Docker**.
 
@@ -39,7 +39,7 @@ My childhood passion for computers turned into a career in backend development. 
   - Implementing **Elasticsearch** for searching and filtering on our tube sites.
 
 - 2013 February - September – **Mobile Application Developer and Manual Tester** at [**Appsters**](https://appsters.me/)
-  - Developing mobile applications from a shared codebase for multiple platforms (iOS, Android, Windows Phone).
+  - Composing mobile applications from a set of codebases for multiple platforms (iOS, Android, Windows Phone).
   - Manually testing the mobile applications using predefined test cases.
 
 ## Education
