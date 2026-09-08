@@ -4,7 +4,7 @@ draft = false
 title = 'Ender Magnolia, GIFs and Hugo Shortcodes'
 +++
 
-I've never written anything specifically about video games before, but recently I played through a game called **Ender Magnolia**, and I wanted to share two cool examples of how the mechanics can elevate each other. As you can see, I did not do that...
+I've never written anything specifically about video games before, but recently I played through a game called **Ender Magnolia**, and I wanted to share two cool examples of how the mechanics can elevate each other. As you can see, I did not do that right away...
 
 <!--more-->
 
@@ -67,10 +67,20 @@ This HTML embeds a video player that plays the video in a loop, muted and withou
 
 ## Favorite Tricks
 
-After this much meandering
+After this much meandering, it's time to talk about the actual game. **Ender Magnolia** is a metroidvania-style side-scrolling game with a very somber atmosphere, which I really, really love. The focus is on movement and combat, which are held together by progression systems based on equipment and abilities. These components play together beautifully.
+
+The first example is a **jump combo**. There is a late-game ability that allows the player to traverse the map horizontally until they hit a wall, like I hit glass doors (based on a true story). But before that, we can use technique and talent!
+
+There is a combat combo with three or four attacks, based on the equipped weapon. There is a movement combo as well, allowing the player to jump and dash twice in the air.
+
+The combat and movement combos can be combined (combo-combo), resulting in: jump, attack combo, dash, attack combo, jump, attack combo, dash, attack combo. The mid-air combos of all the weapons move the player horizontally as well. In the clip below you can see the huge distance that can be covered, it is quite neat.
 
 {{< video-clip src="jump-combo.webm" >}}
 
-## Double Pressure
+The second example is a combination of attacks that I will call **double pressure**. There are multiple types of attacks: primary, cooldown, autonomous, and pressure. A pressure attack is a continuous, multi-hit attack, and there are two pressure attacks that do not interrupt each other, so they can be used together. There are also two kinds of damage: health damage and break damage. Break damage chips away at an enemy's shield and can stagger the enemy when the shield is depleted. One of the pressure attacks damages health, the other damages break.
+
+This is total mayhem, but there is more. There is an item with a passive effect that heals one health point per hit. Pressure attacks hit many times in a short period, and there are two of them in action at the same time. Witness this trick in the clip below.
 
 {{< video-clip src="double-pressure.webm" >}}
+
+In the end, I did manage to write a little about video games. I hope you enjoyed it, and may your path in life be guided by `ffmpeg` flags!
