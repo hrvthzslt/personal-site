@@ -13,7 +13,7 @@ My childhood passion for computers turned into a software engineering career wit
   - Contributing to a rapidly evolving **MCP server** to support merchants' agentic workflows.
 
 - 2024 - 2026 - **Staff Software Engineer** at [**Byborg Enterprises**](https://www.byborgenterprises.com/)
-  - Planning and developing new features for a legacy streaming site and its services under heavy load with performance awareness, using **Python, Flask, MySQL, Redis, Elasticsearch, Kafka**, and **Docker**.
+  - Planning and developing new features for a legacy streaming site and its services under heavy load (~10M daily users) with performance awareness, using **Python, Flask, MySQL, Redis, Elasticsearch, Kafka**, and **Docker**.
   - Integrating a third-party recommendation engine while ensuring high availability.
   - Contributing to the introduction of new technologies, setting up local environments for legacy projects with **Docker**.
 
