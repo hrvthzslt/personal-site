@@ -1,6 +1,6 @@
 <!-- # Zsolt Horváth -->
 
-<!-- **Senior Software Developer ** | Budapest | [GitHub](https://github.com/hrvthzslt) | [LinkedIn](https://www.linkedin.com/in/zsolt-horvath-8779147a/) | [hrvth.7slt@gmail.com](mailto:hrvth.7slt@gmail.com) -->
+<!-- **Software Engineer ** | Budapest | [GitHub](https://github.com/hrvthzslt) | [LinkedIn](https://www.linkedin.com/in/zsolt-horvath-8779147a/) | [hrvth.7slt@gmail.com](mailto:hrvth.7slt@gmail.com) -->
 
 My childhood passion for computers turned into a software engineering career with backend focus. I've worked on a wide range of projects, from legacy monoliths to new services, in high-traffic environments where reliability and availability matter. I enjoy working in teams, sharing knowledge, and making a positive impact whenever I can.
 

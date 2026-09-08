@@ -1,4 +1,4 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Zsolt Horváth'
+title = "Zsolt Horváth's Tales of Computering™"
 theme = 'hometheme'

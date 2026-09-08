@@ -2,7 +2,7 @@
 
 Personal site for my **resume** and **blog** posts with questionable quality, about my ...personal interests. Created with **Hugo** and hosted on **Netfily**.
 
-[https://zsolthorvath.xyz/](https://zsolthorvath.xyz/).
+[https://talesofcomputering.com/](https://talesofcomputering.com/).
 
 ## Setup for development
 
