@@ -7,9 +7,8 @@ Backend-focused Software Engineer with 10+ years of experience building with PHP
 ## Career
 
 - 2026 - Present - **Senior Software Engineer** at [**Recart**](https://recart.com/)
-  - Expanded the integration feature set of the company's SMS marketing and list growth platform.
-  - Maintained the associated microservices using **TypeScript, Node.js, MongoDB, Redis, DynamoDB**, and **Datadog**.
-  - Ensured fault tolerance and high availability with the help of **SQS** and **SNS**.
+  - Expanded the integration capabilities of the company’s SMS marketing and list growth platform while engineering its supporting microservices with **TypeScript, Node.js, MongoDB, Redis, DynamoDB**, and **Datadog**.
+  - Ensured fault tolerance and high availability using **SQS** and **SNS**.
   - Launched a rapidly evolving **MCP server** to support merchants' agentic workflows.
 
 - 2024 - 2026 - **Staff Software Engineer** at [**Byborg Enterprises**](https://www.byborgenterprises.com/)
@@ -24,7 +23,7 @@ Backend-focused Software Engineer with 10+ years of experience building with PHP
   - Monitored applications with **Grafana**, tracked errors with **Sentry**, automated deployments with **GitHub Actions**, and automated infrastructure management with **Ansible**.
 
 - 2021 - 2023 - **Senior Software Developer** at [**Webshippy**](https://webshippy.com/)
-  - Maintained e-logistics platform and onsite software using a stack that included **PHP, MySQL, Redis, and Memcached**.
+  - Supported and expanded e-logistics platform and onsite software using a stack that included **PHP, MySQL, Redis, and Memcached**.
   - Decoupled new features into a microservices architecture using **Laravel, Kafka, and Docker**.
 
 - 2020 - 2021 - **Senior Software Developer** at [**Mindtech Apps**](https://mindtechapps.com/)
@@ -33,7 +32,7 @@ Backend-focused Software Engineer with 10+ years of experience building with PHP
   - Assisted the frontend team with API integrations.
 
 - 2013 - 2020 - **Software Developer at SR Limnatis Holdings Ltd**
-  - Maintained tube sites, administration, CMS, and webmaster sites, as well as supporting services, in **PHP** and **JavaScript**.
+  - Developed tube sites, administration, CMS, and webmaster sites, as well as supporting services, in **PHP** and **JavaScript**.
   - Refactored and rebuilt a legacy project from plain PHP to **CodeIgniter** and, years later, to **Laravel**, while supporting framework updates.
   - Scaled sites to 40M+ views per day using **MySQL** and **MongoDB**, with **Redis** as a caching layer.
   - Introduced **Elasticsearch** for searching and filtering on our tube sites.
