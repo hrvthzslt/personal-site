@@ -7,32 +7,32 @@ Backend-focused Software Engineer with 10+ years of experience building with PHP
 ## Career
 
 - 2026 - Present - **Senior Software Engineer** at [**Recart**](https://recart.com/)
-  - Expanded the integration capabilities of the company’s SMS marketing and list growth platform while engineering its supporting microservices with **TypeScript, Node.js, MongoDB, Redis, DynamoDB**, and **Datadog**.
-  - Ensured fault tolerance and high availability using **SQS** and **SNS**.
+  - Expanded the integration capabilities of the company’s SMS marketing and list growth platform while engineering its related microservices with **TypeScript, Node.js, MongoDB, Redis, DynamoDB**, and **Datadog**.
+  - Ensured fault tolerance and high availability through event-driven messaging with **SQS** and **SNS**.
   - Launched a rapidly evolving **MCP server** to support merchants' agentic workflows.
 
 - 2024 - 2026 - **Staff Software Engineer** at [**Byborg Enterprises**](https://www.byborgenterprises.com/)
-  - Architected new features for a legacy streaming site and its services under heavy load (~10M daily users), with a performance awareness, using **Python, Flask, MySQL, Redis, Elasticsearch, Kafka**, and **Docker**.
+  - Architected new features for a legacy streaming site and its services under heavy load (~10M daily users), with a performance awareness, leveraging **Python, Flask, MySQL, Redis, Elasticsearch, Kafka**, and **Docker**.
   - Integrated an in-house recommendation engine through a cross-team effort while ensuring high availability.
   - Contributed to the introduction of new technologies and created local environments for legacy projects with **Docker**.
 
 - 2023 - 2024 - **Senior Software Developer** at [**Billingo**](https://www.billingo.hu/)
-  - Delivered e-invoicing features using **PHP, Laravel, MySQL, Redis, Elasticsearch**, and **Docker** as the main technologies.
+  - Delivered e-invoicing features built with **PHP, Laravel, MySQL, Redis, Elasticsearch**, and **Docker** as the main technologies.
   - Integrated a non-blocking data synchronization pipeline with an external CRM system.
-  - As part of a high-impact change affecting both the codebase and deployment, upgraded multiple framework versions and mitigated the resulting 20% CPU performance impact.
+  - As part of a high-impact change affecting both the codebase and deployment, upgraded multiple framework versions and mitigated the resulting 20% CPU performance hit.
   - Monitored applications with **Grafana**, tracked errors with **Sentry**, automated deployments with **GitHub Actions**, and automated infrastructure management with **Ansible**.
 
 - 2021 - 2023 - **Senior Software Developer** at [**Webshippy**](https://webshippy.com/)
-  - Supported and expanded e-logistics platform and onsite software using a stack that included **PHP, MySQL, Redis, and Memcached**.
+  - Supported and expanded e-logistics platform and onsite software stack that included **PHP, MySQL, Redis, and Memcached**.
   - Decoupled new features into a microservices architecture using **Laravel, Kafka, and Docker**.
 
 - 2020 - 2021 - **Senior Software Developer** at [**Mindtech Apps**](https://mindtechapps.com/)
   - Built backend REST APIs with **PHP** and **Laravel**.
-  - Built backend APIs with **GraphQL** using **TypeScript** and **NestJS**.
+  - Built backend APIs with **GraphQL**, **TypeScript** and **NestJS**.
   - Assisted the frontend team with API integrations.
 
 - 2013 - 2020 - **Software Developer at SR Limnatis Holdings Ltd**
-  - Developed tube sites, administration, CMS, and webmaster sites, as well as supporting services, in **PHP** and **JavaScript**.
+  - Developed tube sites, administration, CMS, and webmaster sites, as well as associated services, in **PHP** and **JavaScript**.
   - Refactored and rebuilt a legacy project from plain PHP to **CodeIgniter** and, years later, to **Laravel**, while supporting framework updates.
   - Scaled sites to 40M+ views per day using **MySQL** and **MongoDB**, with **Redis** as a caching layer.
   - Introduced **Elasticsearch** for searching and filtering on our tube sites.
