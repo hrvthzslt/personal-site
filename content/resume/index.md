@@ -1,6 +1,6 @@
 <!-- # Zsolt Horváth -->
 
-<!-- **Software Engineer ** | Budapest | [GitHub](https://github.com/hrvthzslt) | [LinkedIn](https://www.linkedin.com/in/zsolt-horvath-8779147a/) | [hrvth.7slt@gmail.com](mailto:hrvth.7slt@gmail.com) -->
+<!-- Budapest | [GitHub](https://github.com/hrvthzslt) | [LinkedIn](https://www.linkedin.com/in/zsolt-horvath-8779147a/) | [hrvth.7slt@gmail.com](mailto:hrvth.7slt@gmail.com) -->
 
 Backend-focused Software Engineer with 10+ years of experience building with PHP, Python, and TypeScript. Worked on a wide range of projects, from legacy monoliths to microservices, in high-traffic environments where reliability and availability are essential. I enjoy working in teams, sharing knowledge, and making a positive impact.
 
