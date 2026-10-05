@@ -2,7 +2,7 @@
 
 <!-- **Software Engineer ** | Budapest | [GitHub](https://github.com/hrvthzslt) | [LinkedIn](https://www.linkedin.com/in/zsolt-horvath-8779147a/) | [hrvth.7slt@gmail.com](mailto:hrvth.7slt@gmail.com) -->
 
-Result-driven Software Engineer with 10+ years of experience specializing in high-traffic backend architectures, microservices, and system reliability. Scaled platforms with 40M+ daily views and optimized legacy monoliths using PHP, Python, and TypeScript. Passionate about sharing knowledge and making a positive impact.
+Backend-focused Software Engineer with 10+ years of experience building with PHP, Python, and TypeScript. Worked on a wide range of projects, from legacy monoliths to microservices, in high-traffic environments where reliability and availability are essential. I enjoy working in teams, sharing knowledge, and making a positive impact.
 
 ## Career
 
@@ -20,7 +20,7 @@ Result-driven Software Engineer with 10+ years of experience specializing in hig
 - 2023 - 2024 - **Senior Software Developer** at [**Billingo**](https://www.billingo.hu/)
   - Delivered e-invoicing features using **PHP, Laravel, MySQL, Redis, Elasticsearch**, and **Docker** as the main technologies.
   - Integrated a non-blocking data synchronization pipeline with an external CRM system.
-  - As part of a high-impact change affecting both the codebase and deployment, upgraded multiple framework versions and mitigated the resulting performance impact (20% CPU usage increase).
+  - As part of a high-impact change affecting both the codebase and deployment, upgraded multiple framework versions and mitigated the resulting 20% CPU performance impact.
   - Monitored applications with **Grafana**, tracked errors with **Sentry**, automated deployments with **GitHub Actions**, and automated infrastructure management with **Ansible**.
 
 - 2021 - 2023 - **Senior Software Developer** at [**Webshippy**](https://webshippy.com/)
@@ -29,7 +29,7 @@ Result-driven Software Engineer with 10+ years of experience specializing in hig
 
 - 2020 - 2021 - **Senior Software Developer** at [**Mindtech Apps**](https://mindtechapps.com/)
   - Built backend REST APIs with **PHP** and **Laravel**.
-  - Built backend APIs with **GraphQL** using **JavaScript/TypeScript** and **NestJS**.
+  - Built backend APIs with **GraphQL** using **TypeScript** and **NestJS**.
   - Assisted the frontend team with API integrations.
 
 - 2013 - 2020 - **Software Developer at SR Limnatis Holdings Ltd**
