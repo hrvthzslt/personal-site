@@ -2,7 +2,7 @@
 
 <!-- Budapest | [GitHub](https://github.com/hrvthzslt) | [LinkedIn](https://www.linkedin.com/in/zsolt-horvath-8779147a/) | [hrvth.7slt@gmail.com](mailto:hrvth.7slt@gmail.com) -->
 
-Backend-focused Software Engineer with 10+ years of experience building with PHP, Python, and TypeScript. Worked on a wide range of projects, from legacy monoliths to microservices, in high-traffic environments where reliability and availability are essential. I enjoy working in teams, sharing knowledge, and making a positive impact.
+Software Engineer with 10+ years of experience building with PHP, Python, and TypeScript. Worked on a wide range of projects, from legacy monoliths to microservices, in high-traffic environments where reliability and availability are essential. I enjoy working in teams, sharing knowledge, and making a positive impact.
 
 ## Career
 
@@ -23,7 +23,7 @@ Backend-focused Software Engineer with 10+ years of experience building with PHP
   - Monitored applications with **Grafana**, tracked errors with **Sentry**, automated deployments with **GitHub Actions**, and automated infrastructure management with **Ansible**.
 
 - Sep 2021 - Feb 2023 - **Senior Software Developer** at [**Webshippy**](https://webshippy.com/)
-  - Supported and expanded e-logistics platform and onsite software stack that included **PHP, MySQL, Redis, and Memcached**.
+  - Developed e-logistics platform and onsite software stack that included **PHP, MySQL, Redis, and Memcached**.
   - Decoupled new features into a microservices architecture using **Laravel, Kafka, and Docker**.
 
 - Dec 2020 - Sep 2021 - **Senior Software Developer** at [**Mindtech Apps**](https://mindtechapps.com/)
