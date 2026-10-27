@@ -12,7 +12,7 @@ stop: # Stop the dev container
 	-docker stop $(IMAGE_NAME)-container
 
 start: stop # Start the dev container
-	docker run -d --rm --name $(IMAGE_NAME)-container --hostname hugo-server -v $(PWD):/homepage -p 1313:1313 $(IMAGE_NAME)
+	docker run -d --rm --name $(IMAGE_NAME)-container --hostname hugo-server -v $(PWD):/homepage:Z -p 1313:1313 $(IMAGE_NAME)
 
 shell: # Start interactive shell in the dev container
 	docker exec -it $(IMAGE_NAME)-container /bin/bash
